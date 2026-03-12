@@ -1,182 +1,122 @@
 [
   {
+    "zoneId": "eilat",
+    "zoneName": "אילת"
+  },
+  {
     "zoneId": "bikaa",
-    "zoneName": "הבקעה",
-    "protectionTimeSeconds": 90,
-    "note": "TODO: לאמת זמן התגוננות לפי טבלת פקע\"ר"
+    "zoneName": "בקעה"
   },
   {
     "zoneId": "bikaat bet shaan",
-    "zoneName": "בקעת בית שאן",
-    "protectionTimeSeconds": 90,
-    "note": "TODO: לאמת זמן התגוננות לפי טבלת פקע\"ר"
-  },
-  {
-    "zoneId": "center galil",
-    "zoneName": "גליל מרכזי",
-    "protectionTimeSeconds": 60,
-    "note": "TODO: לאמת זמן התגוננות לפי טבלת פקע\"ר"
-  },
-  {
-    "zoneId": "center hanegev",
-    "zoneName": "מרכז הנגב",
-    "protectionTimeSeconds": 45,
-    "note": "TODO: לאמת זמן התגוננות לפי טבלת פקע\"ר"
-  },
-  {
-    "zoneId": "dan",
-    "zoneName": "גוש דן",
-    "protectionTimeSeconds": 90,
-    "note": "TODO: לאמת זמן התגוננות לפי טבלת פקע\"ר"
-  },
-  {
-    "zoneId": "dead sea",
-    "zoneName": "ים המלח",
-    "protectionTimeSeconds": 90,
-    "note": "TODO: לאמת זמן התגוננות לפי טבלת פקע\"ר"
-  },
-  {
-    "zoneId": "eilat",
-    "zoneName": "אילת",
-    "protectionTimeSeconds": 30,
-    "note": "TODO: לאמת זמן התגוננות לפי טבלת פקע\"ר"
-  },
-  {
-    "zoneId": "haamakim",
-    "zoneName": "העמקים",
-    "protectionTimeSeconds": 60,
-    "note": "TODO: לאמת זמן התגוננות לפי טבלת פקע\"ר"
-  },
-  {
-    "zoneId": "haharava",
-    "zoneName": "הערבה",
-    "protectionTimeSeconds": 180,
-    "note": "TODO: לאמת זמן התגוננות לפי טבלת פקע\"ר"
-  },
-  {
-    "zoneId": "hakarmel",
-    "zoneName": "כרמל",
-    "protectionTimeSeconds": 60,
-    "note": "TODO: לאמת זמן התגוננות לפי טבלת פקע\"ר"
-  },
-  {
-    "zoneId": "hamifraz",
-    "zoneName": "מפרץ חיפה",
-    "protectionTimeSeconds": 60,
-    "note": "TODO: לאמת זמן התגוננות לפי טבלת פקע\"ר"
-  },
-  {
-    "zoneId": "hasfla",
-    "zoneName": "השפלה",
-    "protectionTimeSeconds": 90,
-    "note": "TODO: לאמת זמן התגוננות לפי טבלת פקע\"ר"
-  },
-  {
-    "zoneId": "jerujalem",
-    "zoneName": "ירושלים",
-    "protectionTimeSeconds": 90,
-    "note": "TODO: לאמת זמן התגוננות לפי טבלת פקע\"ר"
-  },
-  {
-    "zoneId": "kav haeimut",
-    "zoneName": "קו העימות",
-    "protectionTimeSeconds": 0,
-    "note": "מיידי"
-  },
-  {
-    "zoneId": "lachis",
-    "zoneName": "לכיש",
-    "protectionTimeSeconds": 60,
-    "note": "TODO: לאמת זמן התגוננות לפי טבלת פקע\"ר"
-  },
-  {
-    "zoneId": "otef gaza",
-    "zoneName": "עוטף עזה",
-    "protectionTimeSeconds": 15,
-    "note": "TODO: לאמת זמן התגוננות לפי טבלת פקע\"ר"
-  },
-  {
-    "zoneId": "sfelat yehuda",
-    "zoneName": "שפלת יהודה",
-    "protectionTimeSeconds": 60,
-    "note": "TODO: לאמת זמן התגוננות לפי טבלת פקע\"ר"
-  },
-  {
-    "zoneId": "somron",
-    "zoneName": "שומרון",
-    "protectionTimeSeconds": 90,
-    "note": "TODO: לאמת זמן התגוננות לפי טבלת פקע\"ר"
-  },
-  {
-    "zoneId": "south galil",
-    "zoneName": "גליל דרומי",
-    "protectionTimeSeconds": 60,
-    "note": "TODO: לאמת זמן התגוננות לפי טבלת פקע\"ר"
+    "zoneName": "בקעת בית שאן"
   },
   {
     "zoneId": "south golan",
-    "zoneName": "גולן דרומי",
-    "protectionTimeSeconds": 15,
-    "note": "TODO: לאמת זמן התגוננות לפי טבלת פקע\"ר"
-  },
-  {
-    "zoneId": "south hanegev",
-    "zoneName": "דרום הנגב",
-    "protectionTimeSeconds": 30,
-    "note": "TODO: לאמת זמן התגוננות לפי טבלת פקע\"ר"
-  },
-  {
-    "zoneId": "wedi era",
-    "zoneName": "ואדי ערה",
-    "protectionTimeSeconds": 60,
-    "note": "TODO: לאמת זמן התגוננות לפי טבלת פקע\"ר"
-  },
-  {
-    "zoneId": "west galil",
-    "zoneName": "גליל מערבי",
-    "protectionTimeSeconds": 30,
-    "note": "TODO: לאמת זמן התגוננות לפי טבלת פקע\"ר"
+    "zoneName": "גולן דרום"
   },
   {
     "zoneId": "west golan",
-    "zoneName": "גולן צפוני",
-    "protectionTimeSeconds": 0,
-    "note": "מיידי"
+    "zoneName": "גולן צפון"
   },
   {
-    "zoneId": "west hanegev",
-    "zoneName": "מערב הנגב",
-    "protectionTimeSeconds": 30,
-    "note": "TODO: לאמת זמן התגוננות לפי טבלת פקע\"ר"
+    "zoneId": "aleyon galil",
+    "zoneName": "גליל עליון"
   },
   {
-    "zoneId": "west lachis",
-    "zoneName": "לכיש מערב",
-    "protectionTimeSeconds": 60,
-    "note": "TODO: לאמת זמן התגוננות לפי טבלת פקע\"ר"
+    "zoneId": "south galil",
+    "zoneName": "גליל תחתון"
   },
   {
-    "zoneId": "yarkon",
-    "zoneName": "ירקון",
-    "protectionTimeSeconds": 90,
-    "note": "TODO: לאמת זמן התגוננות לפי טבלת פקע\"ר"
+    "zoneId": "dan",
+    "zoneName": "דן"
+  },
+  {
+    "zoneId": "south hanegev",
+    "zoneName": "דרום הנגב"
+  },
+  {
+    "zoneId": "hakarmel",
+    "zoneName": "הכרמל"
+  },
+  {
+    "zoneId": "hamifraz",
+    "zoneName": "המפרץ"
+  },
+  {
+    "zoneId": "haamakim",
+    "zoneName": "העמקים"
+  },
+  {
+    "zoneId": "hasfla",
+    "zoneName": "השפלה"
+  },
+  {
+    "zoneId": "wedi era",
+    "zoneName": "ואדי ערה"
   },
   {
     "zoneId": "yehuda",
-    "zoneName": "יהודה",
-    "protectionTimeSeconds": 90,
-    "note": "TODO: לאמת זמן התגוננות לפי טבלת פקע\"ר"
+    "zoneName": "יהודה"
+  },
+  {
+    "zoneId": "dead sea",
+    "zoneName": "ים המלח"
+  },
+  {
+    "zoneId": "jerujalem",
+    "zoneName": "ירושלים"
+  },
+  {
+    "zoneId": "yarkon",
+    "zoneName": "ירקון"
+  },
+  {
+    "zoneId": "lachis",
+    "zoneName": "לכיש"
   },
   {
     "zoneId": "menasha",
-    "zoneName": "מנשה",
-    "protectionTimeSeconds": 90,
-    "note": "TODO: לאמת זמן התגוננות לפי טבלת פקע\"ר"
+    "zoneName": "מנשה"
+  },
+  {
+    "zoneId": "west hanegev",
+    "zoneName": "מערב הנגב"
+  },
+  {
+    "zoneId": "west lachis",
+    "zoneName": "מערב לכיש"
+  },
+  {
+    "zoneId": "center galil",
+    "zoneName": "מרכז הגליל"
+  },
+  {
+    "zoneId": "center hanegev",
+    "zoneName": "מרכז הנגב"
+  },
+  {
+    "zoneId": "otef gaza",
+    "zoneName": "עוטף עזה"
+  },
+  {
+    "zoneId": "haharava",
+    "zoneName": "ערבה"
+  },
+  {
+    "zoneId": "kav haeimut",
+    "zoneName": "קו העימות"
+  },
+  {
+    "zoneId": "somron",
+    "zoneName": "שומרון"
+  },
+  {
+    "zoneId": "sfelat yehuda",
+    "zoneName": "שפלת יהודה"
   },
   {
     "zoneId": "sharon",
-    "zoneName": "שרון",
-    "protectionTimeSeconds": 90,
-    "note": "TODO: לאמת זמן התגוננות לפי טבלת פקע\"ר"
+    "zoneName": "שרון"
   }
 ]

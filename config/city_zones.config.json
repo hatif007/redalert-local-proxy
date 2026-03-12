@@ -1,707 +1,1207 @@
 [
   {
-    "cityName": "אילת",
-    "zoneId": "eilat"
+    "cityName": "אבו סנאן",
+    "zoneId": "aleyon galil"
   },
   {
-    "cityName": "איילות",
-    "zoneId": "eilat"
+    "cityName": "אבו-גוש",
+    "zoneId": "sfelat yehuda"
   },
   {
-    "cityName": "מעלה אפרים",
-    "zoneId": "bikaa"
+    "cityName": "אבו-תלול",
+    "zoneId": "south hanegev"
   },
   {
-    "cityName": "ארגמן",
-    "zoneId": "bikaa"
+    "cityName": "אבטליון",
+    "zoneId": "center galil"
   },
   {
-    "cityName": "בקעות",
-    "zoneId": "bikaa"
+    "cityName": "אביאל",
+    "zoneId": "menasha"
   },
   {
-    "cityName": "גיתית",
-    "zoneId": "bikaa"
+    "cityName": "אביבים",
+    "zoneId": "kav haeimut"
   },
   {
-    "cityName": "גלגל",
-    "zoneId": "bikaa"
+    "cityName": "אביטל",
+    "zoneId": "haamakim"
   },
   {
-    "cityName": "חמדת",
-    "zoneId": "bikaa"
+    "cityName": "אביעזר",
+    "zoneId": "sfelat yehuda"
   },
   {
-    "cityName": "חמרה",
-    "zoneId": "bikaa"
+    "cityName": "אבירים",
+    "zoneId": "kav haeimut"
   },
   {
-    "cityName": "ייט\"ב",
-    "zoneId": "bikaa"
+    "cityName": "אבן יהודה",
+    "zoneId": "sharon"
   },
   {
-    "cityName": "יפית",
-    "zoneId": "bikaa"
+    "cityName": "אבן מנחם",
+    "zoneId": "kav haeimut"
   },
   {
-    "cityName": "מחולה",
-    "zoneId": "bikaa"
-  },
-  {
-    "cityName": "מכורה",
-    "zoneId": "bikaa"
-  },
-  {
-    "cityName": "משואה",
-    "zoneId": "bikaa"
-  },
-  {
-    "cityName": "משכיות",
-    "zoneId": "bikaa"
-  },
-  {
-    "cityName": "נעמיה",
-    "zoneId": "bikaa"
-  },
-  {
-    "cityName": "נעורה",
-    "zoneId": "bikaa"
-  },
-  {
-    "cityName": "נתיב הגדוד",
-    "zoneId": "bikaa"
-  },
-  {
-    "cityName": "פצאל",
-    "zoneId": "bikaa"
-  },
-  {
-    "cityName": "רעי",
-    "zoneId": "bikaa"
-  },
-  {
-    "cityName": "רותם",
-    "zoneId": "bikaa"
-  },
-  {
-    "cityName": "שדי תרומות",
-    "zoneId": "bikaa"
-  },
-  {
-    "cityName": "שדמות מחולה",
-    "zoneId": "bikaa"
-  },
-  {
-    "cityName": "שלומציון",
-    "zoneId": "bikaa"
-  },
-  {
-    "cityName": "תומר",
-    "zoneId": "bikaa"
-  },
-  {
-    "cityName": "בית שאן",
-    "zoneId": "bikaat bet shaan"
-  },
-  {
-    "cityName": "שלוחות",
-    "zoneId": "bikaat bet shaan"
-  },
-  {
-    "cityName": "nan",
-    "zoneId": "nan"
-  },
-  {
-    "cityName": "רוויה",
-    "zoneId": "bikaat bet shaan"
-  },
-  {
-    "cityName": "חפציבה",
-    "zoneId": "bikaat bet shaan"
-  },
-  {
-    "cityName": "מעוז חיים",
-    "zoneId": "bikaat bet shaan"
-  },
-  {
-    "cityName": "מסילות",
-    "zoneId": "bikaat bet shaan"
-  },
-  {
-    "cityName": "עין הנציב",
-    "zoneId": "bikaat bet shaan"
-  },
-  {
-    "cityName": "נווה איתן",
-    "zoneId": "bikaat bet shaan"
-  },
-  {
-    "cityName": "ירדנה",
-    "zoneId": "bikaat bet shaan"
-  },
-  {
-    "cityName": "שדה אליהו",
-    "zoneId": "bikaat bet shaan"
-  },
-  {
-    "cityName": "שדה נחום",
-    "zoneId": "bikaat bet shaan"
-  },
-  {
-    "cityName": "רחוב",
-    "zoneId": "bikaat bet shaan"
-  },
-  {
-    "cityName": "ניר דוד (תל עמל)",
-    "zoneId": "bikaat bet shaan"
-  },
-  {
-    "cityName": "בית יוסף",
-    "zoneId": "bikaat bet shaan"
-  },
-  {
-    "cityName": "חמדיה",
-    "zoneId": "bikaat bet shaan"
-  },
-  {
-    "cityName": "מעלה גלבוע",
-    "zoneId": "bikaat bet shaan"
-  },
-  {
-    "cityName": "קצרין",
-    "zoneId": "south golan"
+    "cityName": "אבן ספיר",
+    "zoneId": "jerujalem"
   },
   {
     "cityName": "אבני איתן",
     "zoneId": "south golan"
   },
   {
-    "cityName": "אלוני הבשן",
+    "cityName": "אבני חפץ",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "אדורה",
+    "zoneId": "yehuda"
+  },
+  {
+    "cityName": "אדירים",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "אדמית",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "אדרת",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "אודם",
+    "zoneId": "west golan"
+  },
+  {
+    "cityName": "אוהד",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "אום אל פחם",
+    "zoneId": "wedi era"
+  },
+  {
+    "cityName": "אום אל קוטוף",
+    "zoneId": "wedi era"
+  },
+  {
+    "cityName": "אום בטין",
+    "zoneId": "center hanegev"
+  },
+  {
+    "cityName": "אומן",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "אומץ",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "אופקים",
+    "zoneId": "west hanegev"
+  },
+  {
+    "cityName": "אור הגנוז",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "אור הנר",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "אור יהודה",
+    "zoneId": "dan"
+  },
+  {
+    "cityName": "אור עקיבא",
+    "zoneId": "menasha"
+  },
+  {
+    "cityName": "אורה",
+    "zoneId": "jerujalem"
+  },
+  {
+    "cityName": "אורות",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "אורטל",
+    "zoneId": "west golan"
+  },
+  {
+    "cityName": "אורים",
+    "zoneId": "west hanegev"
+  },
+  {
+    "cityName": "אורנית",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "אושה",
+    "zoneId": "hamifraz"
+  },
+  {
+    "cityName": "אזור",
+    "zoneId": "dan"
+  },
+  {
+    "cityName": "אחווה",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "אחוזם",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "אחיה",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "אחיהוד",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "אחיטוב",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "אחיסמך",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "איבטין",
+    "zoneId": "hamifraz"
+  },
+  {
+    "cityName": "איבים",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "אייל",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "איילות",
+    "zoneId": "eilat"
+  },
+  {
+    "cityName": "איילת השחר",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "איכסאל",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "אילון",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "אילנייה",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "אירוס",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "איתמר",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "איתן",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "אל עזי",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "אל עריאן",
+    "zoneId": "wedi era"
+  },
+  {
+    "cityName": "אל רום",
+    "zoneId": "west golan"
+  },
+  {
+    "cityName": "אל-סייד",
+    "zoneId": "center hanegev"
+  },
+  {
+    "cityName": "אלומה",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "אלון",
+    "zoneId": "yehuda"
+  },
+  {
+    "cityName": "אלון הגליל",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "אלון מורה",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "אלוני אבא",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "אלוני בשן",
     "zoneId": "south golan"
   },
   {
-    "cityName": "אלי־עד",
+    "cityName": "אלוני יצחק",
+    "zoneId": "menasha"
+  },
+  {
+    "cityName": "אלונים",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "אלי-עד",
     "zoneId": "south golan"
   },
   {
-    "cityName": "אניעם",
-    "zoneId": "south golan"
+    "cityName": "אליאב",
+    "zoneId": "yehuda"
   },
   {
-    "cityName": "אפיק",
-    "zoneId": "south golan"
+    "cityName": "אליכין",
+    "zoneId": "sharon"
   },
   {
-    "cityName": "בני יהודה",
-    "zoneId": "south golan"
+    "cityName": "אליפז",
+    "zoneId": "haharava"
   },
   {
-    "cityName": "גבעת יואב",
-    "zoneId": "south golan"
+    "cityName": "אליפלט",
+    "zoneId": "aleyon galil"
   },
   {
-    "cityName": "גשור",
-    "zoneId": "south golan"
+    "cityName": "אלישיב",
+    "zoneId": "sharon"
   },
   {
-    "cityName": "חד נס",
-    "zoneId": "south golan"
-  },
-  {
-    "cityName": "חספין",
-    "zoneId": "south golan"
-  },
-  {
-    "cityName": "יונתן",
-    "zoneId": "south golan"
-  },
-  {
-    "cityName": "כנף",
-    "zoneId": "south golan"
-  },
-  {
-    "cityName": "כפר חרוב",
-    "zoneId": "south golan"
-  },
-  {
-    "cityName": "מבוא חמה",
-    "zoneId": "south golan"
-  },
-  {
-    "cityName": "מיצר",
-    "zoneId": "south golan"
-  },
-  {
-    "cityName": "מעלה גמלא",
-    "zoneId": "south golan"
-  },
-  {
-    "cityName": "נאות גולן",
-    "zoneId": "south golan"
-  },
-  {
-    "cityName": "נוב",
-    "zoneId": "south golan"
-  },
-  {
-    "cityName": "נטור",
-    "zoneId": "south golan"
-  },
-  {
-    "cityName": "קדמת צבי",
-    "zoneId": "south golan"
-  },
-  {
-    "cityName": "קשת",
-    "zoneId": "south golan"
-  },
-  {
-    "cityName": "רמות",
-    "zoneId": "south golan"
-  },
-  {
-    "cityName": "רמת מגשימים",
-    "zoneId": "south golan"
+    "cityName": "אלישמע",
+    "zoneId": "sharon"
   },
   {
     "cityName": "אלמגור",
     "zoneId": "south golan"
   },
   {
-    "cityName": "אשדות יעקב (איחוד)",
-    "zoneId": "south golan"
+    "cityName": "אלמוג",
+    "zoneId": "dead sea"
   },
   {
-    "cityName": "אשדות יעקב (מאוחד)",
-    "zoneId": "south golan"
+    "cityName": "אלעד",
+    "zoneId": "yarkon"
   },
   {
-    "cityName": "האון",
-    "zoneId": "south golan"
+    "cityName": "אלעזר",
+    "zoneId": "yehuda"
   },
   {
-    "cityName": "מסדה",
-    "zoneId": "south golan"
+    "cityName": "אלפי מנשה",
+    "zoneId": "sharon"
   },
   {
-    "cityName": "מעגן",
-    "zoneId": "south golan"
+    "cityName": "אלקוש",
+    "zoneId": "kav haeimut"
   },
   {
-    "cityName": "עין גב",
-    "zoneId": "south golan"
+    "cityName": "אלקנה",
+    "zoneId": "sharon"
   },
   {
-    "cityName": "שער הגולן",
-    "zoneId": "south golan"
-  },
-  {
-    "cityName": "תל קציר",
-    "zoneId": "south golan"
-  },
-  {
-    "cityName": "בית ג'אן",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "בענה",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "ג'דיידה–מכר",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "ג'וליס",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "דיר אל־אסד",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "חצור הגלילית",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "טובא–זנגרייה",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "יאנוח–ג'ת",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "יסוד המעלה",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "כסרא–סמיע",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "ירכא",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "כפר יאסיף",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "כרמיאל",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "מג'ד אל־כרום",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "מגדל תפן",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "מזרעה",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "נחף",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "סאג'ור",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "עכו",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "צפת",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "ראמה",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "ראש פינה",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "איילת השחר",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "גדות",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "חולתה",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "כפר הנשיא",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "כרי דשא",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "מחניים",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "עמיעד",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "קדרים",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "אליפלט",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "אמנון",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "כורזים",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "כחל",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "כרכום",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "משמר הירדן",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "שדה אליעזר",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "אחיהוד",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "אפק",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "אשרת",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "בוסתן הגליל",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "בית העמק",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "יסעור",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "כליל",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "כפר מסריק",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "לוחמי הגטאות",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "נס עמים",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "נתיב השיירה",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "עין המפרץ",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "עמקה",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "רגבה",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "שבי ציון",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "שייח' דנון",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "שומרת",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "גיתה",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "לפידות",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "אור הגנוז",
-    "zoneId": "west galil"
+    "cityName": "אמונים",
+    "zoneId": "lachis"
   },
   {
     "cityName": "אמירים",
-    "zoneId": "west galil"
+    "zoneId": "aleyon galil"
   },
   {
-    "cityName": "ביריה",
-    "zoneId": "west galil"
+    "cityName": "אמנון",
+    "zoneId": "aleyon galil"
   },
   {
-    "cityName": "בר יוחאי",
-    "zoneId": "west galil"
+    "cityName": "אמציה",
+    "zoneId": "yehuda"
   },
   {
-    "cityName": "כדיתה",
-    "zoneId": "west galil"
+    "cityName": "אניעם",
+    "zoneId": "south golan"
   },
   {
-    "cityName": "כפר שמאי",
-    "zoneId": "west galil"
+    "cityName": "אספר",
+    "zoneId": "yehuda"
   },
   {
-    "cityName": "מירון",
-    "zoneId": "west galil"
+    "cityName": "אעבלין",
+    "zoneId": "center galil"
   },
   {
-    "cityName": "עין אל אסד",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "עמוקה",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "פרוד",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "שזור",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "שפר",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "כפר חושן–ספסופה",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "בר לב",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "גילון",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "הר חלוץ",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "חרשים",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "טל־אל",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "כישור",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "כמאנה",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "כמון",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "לבון",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "מכמנים",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "פלך",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "צורית",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "תובל",
-    "zoneId": "west galil"
-  },
-  {
-    "cityName": "טבריה",
-    "zoneId": "south galil"
-  },
-  {
-    "cityName": "יבנאל",
-    "zoneId": "south galil"
-  },
-  {
-    "cityName": "כפר כמא",
-    "zoneId": "south galil"
-  },
-  {
-    "cityName": "מגדל",
-    "zoneId": "south galil"
-  },
-  {
-    "cityName": "ארבל",
-    "zoneId": "south galil"
-  },
-  {
-    "cityName": "גבעת אבני",
-    "zoneId": "south galil"
-  },
-  {
-    "cityName": "הודיות",
-    "zoneId": "south galil"
-  },
-  {
-    "cityName": "הזורעים",
-    "zoneId": "south galil"
-  },
-  {
-    "cityName": "כפר זיתים",
-    "zoneId": "south galil"
-  },
-  {
-    "cityName": "כפר חיטים",
-    "zoneId": "south galil"
-  },
-  {
-    "cityName": "לביא",
-    "zoneId": "south galil"
-  },
-  {
-    "cityName": "מצפה",
-    "zoneId": "south galil"
-  },
-  {
-    "cityName": "שדה אילן",
-    "zoneId": "south galil"
-  },
-  {
-    "cityName": "שרונה",
-    "zoneId": "south galil"
-  },
-  {
-    "cityName": "לבנים",
-    "zoneId": "south galil"
-  },
-  {
-    "cityName": "אלומות",
-    "zoneId": "south galil"
+    "cityName": "אפיק",
+    "zoneId": "south golan"
   },
   {
     "cityName": "אפיקים",
     "zoneId": "south galil"
   },
   {
+    "cityName": "אפק",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "אפרת",
+    "zoneId": "yehuda"
+  },
+  {
+    "cityName": "ארבל",
+    "zoneId": "south galil"
+  },
+  {
+    "cityName": "ארז",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "אריאל",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "ארסוף",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "אש קודש",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "אשבל",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "אשדוד",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "אשדות יעקב )מאוחד(",
+    "zoneId": "south golan"
+  },
+  {
+    "cityName": "אשדות יעקב)איחוד(",
+    "zoneId": "south golan"
+  },
+  {
+    "cityName": "אשחר",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "אשכולות",
+    "zoneId": "center hanegev"
+  },
+  {
+    "cityName": "אשרת",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "אשתאול",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "באקה אל גרבייה",
+    "zoneId": "wedi era"
+  },
+  {
+    "cityName": "באר אורה",
+    "zoneId": "haharava"
+  },
+  {
+    "cityName": "באר גנים",
+    "zoneId": "west lachis"
+  },
+  {
+    "cityName": "באר טוביה",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "באר יעקב",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "באר מילכה",
+    "zoneId": "south hanegev"
+  },
+  {
+    "cityName": "באר שבע",
+    "zoneId": "center hanegev"
+  },
+  {
+    "cityName": "בארות יצחק",
+    "zoneId": "yarkon"
+  },
+  {
+    "cityName": "בארותיים",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "בארי",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "בוסתן הגליל",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "בועיינה - נוג'ידאת",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "בוקעתא",
+    "zoneId": "west golan"
+  },
+  {
+    "cityName": "בורגתה",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "בחן",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "בטחה",
+    "zoneId": "west hanegev"
+  },
+  {
+    "cityName": "ביצרון",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "ביר אל מכסור",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "ביר הדאג'",
+    "zoneId": "south hanegev"
+  },
+  {
+    "cityName": "ביריה",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "בית אורן",
+    "zoneId": "hakarmel"
+  },
+  {
+    "cityName": "בית אל",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "בית אלעזרי",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "בית אלפא",
+    "zoneId": "bikaat bet shaan"
+  },
+  {
+    "cityName": "בית אריה - עופרים",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "בית ברל",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "בית ג'אן",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "בית גוברין",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "בית דגן",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "בית הגדי",
+    "zoneId": "west hanegev"
+  },
+  {
+    "cityName": "בית הלוי",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "בית הלל",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "בית העמק",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "בית הערבה",
+    "zoneId": "dead sea"
+  },
+  {
+    "cityName": "בית השיטה",
+    "zoneId": "bikaat bet shaan"
+  },
+  {
+    "cityName": "בית זייד",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "בית זית",
+    "zoneId": "jerujalem"
+  },
+  {
     "cityName": "בית זרע",
     "zoneId": "south galil"
   },
   {
+    "cityName": "בית חג\"י",
+    "zoneId": "yehuda"
+  },
+  {
+    "cityName": "בית חורון",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "בית חלקיה",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "בית חנן",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "בית חנניה",
+    "zoneId": "menasha"
+  },
+  {
+    "cityName": "בית חרות",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "בית חשמונאי",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "בית יהושע",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "בית ינאי",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "בית יצחק - שער חפר",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "בית יתיר",
+    "zoneId": "yehuda"
+  },
+  {
+    "cityName": "בית לחם הגלילית",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "בית מאיר",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "בית נחמיה",
+    "zoneId": "yarkon"
+  },
+  {
+    "cityName": "בית ניר",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "בית נקופה",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "בית עובד",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "בית עוזיאל",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "בית עזרא",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "בית עריף",
+    "zoneId": "yarkon"
+  },
+  {
+    "cityName": "בית צבי",
+    "zoneId": "hakarmel"
+  },
+  {
+    "cityName": "בית קשת",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "בית רימון",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "בית שמש",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "בית שערים",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "בית שקמה",
+    "zoneId": "west lachis"
+  },
+  {
+    "cityName": "ביתן אהרן",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "ביתר עילית",
+    "zoneId": "yehuda"
+  },
+  {
+    "cityName": "בלפוריה",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "בן זכאי",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "בן עמי",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "בן שמן )מושב(",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "בני ברק",
+    "zoneId": "dan"
+  },
+  {
+    "cityName": "בני דקלים",
+    "zoneId": "yehuda"
+  },
+  {
+    "cityName": "בני דרום",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "בני יהודה",
+    "zoneId": "south golan"
+  },
+  {
+    "cityName": "בני נצרים",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "בני עטרות",
+    "zoneId": "yarkon"
+  },
+  {
+    "cityName": "בני עי\"ש",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "בני ציון",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "בני ראם",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "בניה",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "בנימינה - גבעת עדה",
+    "zoneId": "menasha"
+  },
+  {
+    "cityName": "בסמ\"ה )ברטעה",
+    "zoneId": "wedi era"
+  },
+  {
+    "cityName": "בסמת טבעון",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "בענה",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "בצרה",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "בצת",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "בקוע",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "בקעות",
+    "zoneId": "bikaa"
+  },
+  {
+    "cityName": "בר גיורא",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "בר יוחאי",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "ברוכין",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "ברור חיל",
+    "zoneId": "west hanegev"
+  },
+  {
+    "cityName": "ברוש",
+    "zoneId": "west hanegev"
+  },
+  {
+    "cityName": "ברכה",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "ברכיה",
+    "zoneId": "west lachis"
+  },
+  {
+    "cityName": "ברעם",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "ברק",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "ברקאי",
+    "zoneId": "menasha"
+  },
+  {
+    "cityName": "ברקת",
+    "zoneId": "yarkon"
+  },
+  {
+    "cityName": "בת הדר",
+    "zoneId": "west lachis"
+  },
+  {
+    "cityName": "בת חן",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "בת חפר",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "בת עין",
+    "zoneId": "yehuda"
+  },
+  {
+    "cityName": "בת שלמה",
+    "zoneId": "hakarmel"
+  },
+  {
+    "cityName": "בת-ים",
+    "zoneId": "dan"
+  },
+  {
+    "cityName": "ג'דידה- מכר",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "ג'וליס",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "ג'לג'וליה",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "ג'סר א-זרקא",
+    "zoneId": "menasha"
+  },
+  {
+    "cityName": "ג'ת",
+    "zoneId": "wedi era"
+  },
+  {
+    "cityName": "גאולי תימן",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "גאולים",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "גאליה",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "גבולות",
+    "zoneId": "west hanegev"
+  },
+  {
+    "cityName": "גבים",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "גבע",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "גבע בנימין",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "גבע כרמל",
+    "zoneId": "hakarmel"
+  },
+  {
+    "cityName": "גבעולים",
+    "zoneId": "west hanegev"
+  },
+  {
+    "cityName": "גבעון החדשה",
+    "zoneId": "jerujalem"
+  },
+  {
+    "cityName": "גבעות בר",
+    "zoneId": "center hanegev"
+  },
+  {
+    "cityName": "גבעת אבני",
+    "zoneId": "south galil"
+  },
+  {
+    "cityName": "גבעת אלה",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "גבעת ברנר",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "גבעת וושינגטון",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "גבעת זאב",
+    "zoneId": "jerujalem"
+  },
+  {
+    "cityName": "גבעת חביבה",
+    "zoneId": "menasha"
+  },
+  {
+    "cityName": "גבעת חיים איחוד",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "גבעת חיים מאוחד",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "גבעת חן",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "גבעת יואב",
+    "zoneId": "south golan"
+  },
+  {
+    "cityName": "גבעת יערים",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "גבעת ישעיהו",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "גבעת כ''ח",
+    "zoneId": "yarkon"
+  },
+  {
+    "cityName": "גבעת ניל''י",
+    "zoneId": "wedi era"
+  },
+  {
+    "cityName": "גבעת עוז",
+    "zoneId": "wedi era"
+  },
+  {
+    "cityName": "גבעת שמואל",
+    "zoneId": "dan"
+  },
+  {
+    "cityName": "גבעת שמש",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "גבעת שפירא",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "גבעתי",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "גבעתיים",
+    "zoneId": "dan"
+  },
+  {
+    "cityName": "גברעם",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "גבת",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "גדות",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "גדיש",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "גדעונה",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "גדרה",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "גונן",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "גורן",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "גוש חלב )ג'ש(",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "גזית",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "גזר",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "גיאה",
+    "zoneId": "west lachis"
+  },
+  {
+    "cityName": "גיבתון",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "גיזו",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "גילון",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "גילת",
+    "zoneId": "west hanegev"
+  },
+  {
     "cityName": "גינוסר",
     "zoneId": "south galil"
+  },
+  {
+    "cityName": "גינתון",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "גיתה",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "גיתית",
+    "zoneId": "bikaa"
+  },
+  {
+    "cityName": "גלאון",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "גלגל",
+    "zoneId": "bikaa"
+  },
+  {
+    "cityName": "גליל ים",
+    "zoneId": "dan"
+  },
+  {
+    "cityName": "גלעד",
+    "zoneId": "wedi era"
+  },
+  {
+    "cityName": "גמזו",
+    "zoneId": "yarkon"
+  },
+  {
+    "cityName": "גן השומרון",
+    "zoneId": "menasha"
+  },
+  {
+    "cityName": "גן חיים",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "גן יאשיה",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "גן יבנה",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "גן נר",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "גן שורק",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "גן שמואל",
+    "zoneId": "menasha"
+  },
+  {
+    "cityName": "גנות",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "גנות הדר",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "גני הדר",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "גני טל",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "גני יוחנן",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "גני מודיעין",
+    "zoneId": "yarkon"
+  },
+  {
+    "cityName": "גני עם",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "גני תקווה",
+    "zoneId": "dan"
+  },
+  {
+    "cityName": "גניגר",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "געש",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "געתון",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "גפן",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "גרופית",
+    "zoneId": "haharava"
+  },
+  {
+    "cityName": "גרנות הגליל",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "גשור",
+    "zoneId": "south golan"
+  },
+  {
+    "cityName": "גשר",
+    "zoneId": "bikaat bet shaan"
+  },
+  {
+    "cityName": "גשר הזיו",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "גת",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "גת רימון",
+    "zoneId": "dan"
+  },
+  {
+    "cityName": "דאלית אל כרמל",
+    "zoneId": "hakarmel"
+  },
+  {
+    "cityName": "דבורה",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "דבוריה",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "דבירה",
+    "zoneId": "center hanegev"
+  },
+  {
+    "cityName": "דברת",
+    "zoneId": "haamakim"
   },
   {
     "cityName": "דגניה א'",
@@ -712,8 +1212,768 @@
     "zoneId": "south galil"
   },
   {
+    "cityName": "דוב''ב",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "דולב",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "דור",
+    "zoneId": "hakarmel"
+  },
+  {
+    "cityName": "דורות",
+    "zoneId": "west hanegev"
+  },
+  {
+    "cityName": "דימונה",
+    "zoneId": "south hanegev"
+  },
+  {
+    "cityName": "דיר אל-אסד",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "דיר חנא",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "דישון",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "דליה",
+    "zoneId": "wedi era"
+  },
+  {
+    "cityName": "דלתון",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "דמיידה",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "דן",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "דפנה",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "דקל",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "האון",
+    "zoneId": "south golan"
+  },
+  {
+    "cityName": "הבונים",
+    "zoneId": "hakarmel"
+  },
+  {
+    "cityName": "הגושרים",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "הדר עם",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "הוד השרון",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "הודיה",
+    "zoneId": "west lachis"
+  },
+  {
+    "cityName": "הודיות",
+    "zoneId": "south galil"
+  },
+  {
+    "cityName": "הושעיה",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "הזורע",
+    "zoneId": "wedi era"
+  },
+  {
+    "cityName": "הזורעים",
+    "zoneId": "south galil"
+  },
+  {
+    "cityName": "החותרים",
+    "zoneId": "hamifraz"
+  },
+  {
+    "cityName": "היוגב",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "הילה",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "המעפיל",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "הסוללים",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "העוגן",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "הר אדר",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "הר גילה",
+    "zoneId": "yehuda"
+  },
+  {
+    "cityName": "הר חלוץ",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "הר עמשא",
+    "zoneId": "yehuda"
+  },
+  {
+    "cityName": "הראל",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "הרדוף",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "הרצליה",
+    "zoneId": "dan"
+  },
+  {
+    "cityName": "הררית",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "ואדי אל חמאם",
+    "zoneId": "south galil"
+  },
+  {
+    "cityName": "ורד יריחו",
+    "zoneId": "dead sea"
+  },
+  {
+    "cityName": "ורדון",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "זבדיאל",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "זוהר",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "זיקים",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "זיתן",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "זכרון יעקב",
+    "zoneId": "menasha"
+  },
+  {
+    "cityName": "זכריה",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "זמר",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "זמרת",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "זנוח",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "זרועה",
+    "zoneId": "west hanegev"
+  },
+  {
+    "cityName": "זרזיר",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "זרחיה",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "זרעית",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "ח'וואלד",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "חבצלת השרון",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "חבר",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "חגור",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "חגלה",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "חד נס",
+    "zoneId": "south golan"
+  },
+  {
+    "cityName": "חדיד",
+    "zoneId": "yarkon"
+  },
+  {
+    "cityName": "חדרה",
+    "zoneId": "menasha"
+  },
+  {
+    "cityName": "חוג'ייראת )ד'הרה(",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "חולדה",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "חולון",
+    "zoneId": "dan"
+  },
+  {
+    "cityName": "חולית",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "חולתה",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "חוסן",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "חוסנייה",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "חופית",
+    "zoneId": "sharon"
+  },
+  {
     "cityName": "חוקוק",
     "zoneId": "south galil"
+  },
+  {
+    "cityName": "חורה",
+    "zoneId": "center hanegev"
+  },
+  {
+    "cityName": "חורפיש",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "חורשים",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "חזון",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "חיבת ציון",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "חיננית",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "חיפה",
+    "zoneId": "hamifraz"
+  },
+  {
+    "cityName": "חלץ",
+    "zoneId": "west lachis"
+  },
+  {
+    "cityName": "חמד",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "חמדיה",
+    "zoneId": "bikaat bet shaan"
+  },
+  {
+    "cityName": "חמדת",
+    "zoneId": "bikaa"
+  },
+  {
+    "cityName": "חמרה",
+    "zoneId": "bikaa"
+  },
+  {
+    "cityName": "חניאל",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "חניתה",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "חנתון",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "חספין",
+    "zoneId": "south golan"
+  },
+  {
+    "cityName": "חפץ חיים",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "חפציבה",
+    "zoneId": "bikaat bet shaan"
+  },
+  {
+    "cityName": "חצב",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "חצור",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "חצור הגלילית",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "חצרים",
+    "zoneId": "center hanegev"
+  },
+  {
+    "cityName": "חרב לאת",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "חרוצים",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "חרות",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "חריש",
+    "zoneId": "wedi era"
+  },
+  {
+    "cityName": "חרמש",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "חרשים",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "חשמונאים",
+    "zoneId": "yarkon"
+  },
+  {
+    "cityName": "טבריה",
+    "zoneId": "south galil"
+  },
+  {
+    "cityName": "טובא- זנגרייה",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "טורעאן",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "טייבה",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "טייבה )בעמק(",
+    "zoneId": "bikaat bet shaan"
+  },
+  {
+    "cityName": "טירה",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "טירת הכרמל",
+    "zoneId": "hamifraz"
+  },
+  {
+    "cityName": "טירת יהודה",
+    "zoneId": "yarkon"
+  },
+  {
+    "cityName": "טירת צבי",
+    "zoneId": "bikaat bet shaan"
+  },
+  {
+    "cityName": "טל שחר",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "טל- אל",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "טללים",
+    "zoneId": "south hanegev"
+  },
+  {
+    "cityName": "טלמון",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "טמרה )יזרעאל(",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "טנא עומרים",
+    "zoneId": "yehuda"
+  },
+  {
+    "cityName": "טפחות",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "יאנוח- ג'ת",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "יבול",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "יבנאל",
+    "zoneId": "south galil"
+  },
+  {
+    "cityName": "יבנה",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "יגור",
+    "zoneId": "hamifraz"
+  },
+  {
+    "cityName": "יגל",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "יד השמונה",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "יד חנה",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "יד מרדכי",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "יד נתן",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "יד רמב''ם",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "ידידה ישעי",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "יהוד - מונוסון",
+    "zoneId": "dan"
+  },
+  {
+    "cityName": "יהל",
+    "zoneId": "haharava"
+  },
+  {
+    "cityName": "יובל",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "יובלים",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "יודפת",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "יונתן",
+    "zoneId": "south golan"
+  },
+  {
+    "cityName": "יושיביה",
+    "zoneId": "west hanegev"
+  },
+  {
+    "cityName": "יזרעאל",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "יחיעם",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "יטבתה",
+    "zoneId": "haharava"
+  },
+  {
+    "cityName": "ייט''ב",
+    "zoneId": "bikaa"
+  },
+  {
+    "cityName": "יינון",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "יכיני",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "ינוב",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "יסוד המעלה",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "יסודות",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "יסעור",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "יעד",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "יעל",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "יעף",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "יערה",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "יפיע",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "יפית",
+    "zoneId": "bikaa"
+  },
+  {
+    "cityName": "יפעת",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "יפתח",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "יצהר",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "יציץ",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "יקום",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "יקיר",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "יקנעם המושבה",
+    "zoneId": "wedi era"
+  },
+  {
+    "cityName": "יקנעם עילית",
+    "zoneId": "wedi era"
+  },
+  {
+    "cityName": "יראון",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "ירדנה",
+    "zoneId": "bikaat bet shaan"
+  },
+  {
+    "cityName": "ירוחם",
+    "zoneId": "south hanegev"
+  },
+  {
+    "cityName": "ירושלים",
+    "zoneId": "jerujalem"
+  },
+  {
+    "cityName": "ירחיב",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "ירכא",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "ירקונה",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "ישע",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "ישרש",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "יתד",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "כאבול",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "כאוכב אבו אל היג'א",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "כברי",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "כדורי",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "כדיתה",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "כוחלה",
+    "zoneId": "south hanegev"
+  },
+  {
+    "cityName": "כוכב השחר",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "כוכב יאיר- צור יגאל",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "כוכב יעקב",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "כוכב מיכאל",
+    "zoneId": "west lachis"
+  },
+  {
+    "cityName": "כורזים",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "כחל",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "כיסופים",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "כישור",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "כל ישובי מוא\"ז מגילות ים המלח- אבנת",
+    "zoneId": "dead sea"
+  },
+  {
+    "cityName": "כליל",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "כלנית",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "כמאנה",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "כמהין",
+    "zoneId": "south hanegev"
+  },
+  {
+    "cityName": "כמון",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "כנות",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "כנף",
+    "zoneId": "south golan"
   },
   {
     "cityName": "כנרת מושבה",
@@ -722,6 +1982,1702 @@
   {
     "cityName": "כנרת קבוצה",
     "zoneId": "south galil"
+  },
+  {
+    "cityName": "כסייפה",
+    "zoneId": "south hanegev"
+  },
+  {
+    "cityName": "כסלון",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "כסרא- סמיע",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "כעביה-טבאש-חג'אג'רה",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "כפר אביב",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "כפר אדומים",
+    "zoneId": "yehuda"
+  },
+  {
+    "cityName": "כפר אוריה",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "כפר אחים",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "כפר ביאליק",
+    "zoneId": "hamifraz"
+  },
+  {
+    "cityName": "כפר ביל''ו",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "כפר בלום",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "כפר בן נון",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "כפר ברא",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "כפר ברוך",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "כפר גדעון",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "כפר גליקסון",
+    "zoneId": "menasha"
+  },
+  {
+    "cityName": "כפר גלעדי",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "כפר דניאל",
+    "zoneId": "yarkon"
+  },
+  {
+    "cityName": "כפר האורנים",
+    "zoneId": "yarkon"
+  },
+  {
+    "cityName": "כפר החורש",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "כפר המכבי",
+    "zoneId": "hamifraz"
+  },
+  {
+    "cityName": "כפר הנגיד",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "כפר הנוער הדתי",
+    "zoneId": "hamifraz"
+  },
+  {
+    "cityName": "כפר הנשיא",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "כפר הס",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "כפר הרא''ה",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "כפר הרי\"ף",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "כפר ויתקין",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "כפר ורבורג",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "כפר ורדים",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "כפר זוהרים",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "כפר זיתים",
+    "zoneId": "south galil"
+  },
+  {
+    "cityName": "כפר חב''ד",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "כפר חיטים",
+    "zoneId": "south galil"
+  },
+  {
+    "cityName": "כפר חיים",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "כפר חנניה",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "כפר חסידים א'",
+    "zoneId": "hamifraz"
+  },
+  {
+    "cityName": "כפר חסידים ב'",
+    "zoneId": "hamifraz"
+  },
+  {
+    "cityName": "כפר חרוב",
+    "zoneId": "south golan"
+  },
+  {
+    "cityName": "כפר טרומן",
+    "zoneId": "yarkon"
+  },
+  {
+    "cityName": "כפר יאסיף",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "כפר ידידיה",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "כפר יהושע",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "כפר יחזקאל",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "כפר יעבץ",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "כפר כמא",
+    "zoneId": "south galil"
+  },
+  {
+    "cityName": "כפר כנא",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "כפר מונש",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "כפר מימון",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "כפר מל''ל",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "כפר מנדא",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "כפר מנחם",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "כפר מסריק",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "כפר מצר",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "כפר מרדכי",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "כפר נטר",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "כפר סאלד",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "כפר סבא",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "כפר סילבר",
+    "zoneId": "west lachis"
+  },
+  {
+    "cityName": "כפר סירקין",
+    "zoneId": "dan"
+  },
+  {
+    "cityName": "כפר עזה",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "כפר עציון",
+    "zoneId": "yehuda"
+  },
+  {
+    "cityName": "כפר פינס",
+    "zoneId": "menasha"
+  },
+  {
+    "cityName": "כפר קאסם",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "כפר קיש",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "כפר קרע",
+    "zoneId": "wedi era"
+  },
+  {
+    "cityName": "כפר ראש הנקרה",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "כפר רופין",
+    "zoneId": "bikaat bet shaan"
+  },
+  {
+    "cityName": "כפר רות",
+    "zoneId": "yarkon"
+  },
+  {
+    "cityName": "כפר שמאי",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "כפר שמואל",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "כפר שמריהו",
+    "zoneId": "dan"
+  },
+  {
+    "cityName": "כפר תבור",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "כפר תפוח",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "כרי דשא",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "כרכום",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "כרם בן זמרה",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "כרם מהר''ל",
+    "zoneId": "hakarmel"
+  },
+  {
+    "cityName": "כרם שלום",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "כרמי יוסף",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "כרמי צור",
+    "zoneId": "yehuda"
+  },
+  {
+    "cityName": "כרמי קטיף",
+    "zoneId": "yehuda"
+  },
+  {
+    "cityName": "כרמיאל",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "כרמיה",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "כרמים",
+    "zoneId": "center hanegev"
+  },
+  {
+    "cityName": "כרמל",
+    "zoneId": "yehuda"
+  },
+  {
+    "cityName": "לבון",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "לביא",
+    "zoneId": "south galil"
+  },
+  {
+    "cityName": "להב",
+    "zoneId": "center hanegev"
+  },
+  {
+    "cityName": "להבות הבשן",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "להבות חביבה",
+    "zoneId": "menasha"
+  },
+  {
+    "cityName": "להבים",
+    "zoneId": "center hanegev"
+  },
+  {
+    "cityName": "לוד",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "לוזית",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "לוחמי הגטאות",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "לוטם",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "לוטן",
+    "zoneId": "haharava"
+  },
+  {
+    "cityName": "לימן",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "לכיש",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "לפיד",
+    "zoneId": "yarkon"
+  },
+  {
+    "cityName": "לקיה",
+    "zoneId": "center hanegev"
+  },
+  {
+    "cityName": "מאור",
+    "zoneId": "menasha"
+  },
+  {
+    "cityName": "מאיר שפיה",
+    "zoneId": "hakarmel"
+  },
+  {
+    "cityName": "מבוא ביתר",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "מבוא דותן",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "מבוא חורון",
+    "zoneId": "yarkon"
+  },
+  {
+    "cityName": "מבוא חמה",
+    "zoneId": "south golan"
+  },
+  {
+    "cityName": "מבוא מודיעים",
+    "zoneId": "yarkon"
+  },
+  {
+    "cityName": "מבועים",
+    "zoneId": "west hanegev"
+  },
+  {
+    "cityName": "מבטחים",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "מבקיעים",
+    "zoneId": "west lachis"
+  },
+  {
+    "cityName": "מג'ד אל כרום",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "מג'דל שמס",
+    "zoneId": "west golan"
+  },
+  {
+    "cityName": "מגדים",
+    "zoneId": "hakarmel"
+  },
+  {
+    "cityName": "מגדל העמק",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "מגדל עוז",
+    "zoneId": "yehuda"
+  },
+  {
+    "cityName": "מגדל תפן",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "מגדלים",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "מגידו",
+    "zoneId": "wedi era"
+  },
+  {
+    "cityName": "מגל",
+    "zoneId": "wedi era"
+  },
+  {
+    "cityName": "מגן",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "מגן שאול",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "מגרון",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "מגשימים",
+    "zoneId": "dan"
+  },
+  {
+    "cityName": "מדרך עוז",
+    "zoneId": "wedi era"
+  },
+  {
+    "cityName": "מדרשת בן גוריון",
+    "zoneId": "south hanegev"
+  },
+  {
+    "cityName": "מודיעין עילית",
+    "zoneId": "yarkon"
+  },
+  {
+    "cityName": "מודיעין- מכבים- רעות",
+    "zoneId": "yarkon"
+  },
+  {
+    "cityName": "מולדה",
+    "zoneId": "south hanegev"
+  },
+  {
+    "cityName": "מולדת כל ישובי מוא\"ז עמק המעיינות- בית יוסף",
+    "zoneId": "bikaat bet shaan"
+  },
+  {
+    "cityName": "מועאוויה",
+    "zoneId": "wedi era"
+  },
+  {
+    "cityName": "מוצא עילית",
+    "zoneId": "jerujalem"
+  },
+  {
+    "cityName": "מוקייבלה",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "מורן",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "מורשת",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "מושב מרחביה",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "מזור",
+    "zoneId": "yarkon"
+  },
+  {
+    "cityName": "מזכרת בתיה",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "מזרע",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "מזרעה",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "מחולה",
+    "zoneId": "bikaa"
+  },
+  {
+    "cityName": "מחניים",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "מחסיה",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "מטולה",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "מטע",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "מי עמי",
+    "zoneId": "wedi era"
+  },
+  {
+    "cityName": "מיטב",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "מייסר",
+    "zoneId": "wedi era"
+  },
+  {
+    "cityName": "מיצר",
+    "zoneId": "south golan"
+  },
+  {
+    "cityName": "מירב",
+    "zoneId": "bikaat bet shaan"
+  },
+  {
+    "cityName": "מירון",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "מישר",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "מיתר נאות חובב",
+    "zoneId": "center hanegev"
+  },
+  {
+    "cityName": "מכורה",
+    "zoneId": "bikaa"
+  },
+  {
+    "cityName": "מכחול כל ישובי מוא\"ז נווה מדבר- אבו קרינאת",
+    "zoneId": "south hanegev"
+  },
+  {
+    "cityName": "מכמורת",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "מכמנים",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "מלאה",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "מלילות",
+    "zoneId": "west hanegev"
+  },
+  {
+    "cityName": "מלכיה",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "מנוחה",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "מנוף",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "מנות",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "מנחמיה",
+    "zoneId": "bikaat bet shaan"
+  },
+  {
+    "cityName": "מנרה",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "מנשית זבדה",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "מסד",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "מסדה",
+    "zoneId": "south golan"
+  },
+  {
+    "cityName": "מסילות",
+    "zoneId": "bikaat bet shaan"
+  },
+  {
+    "cityName": "מסילת ציון",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "מסלול",
+    "zoneId": "west hanegev"
+  },
+  {
+    "cityName": "מסעדה",
+    "zoneId": "west golan"
+  },
+  {
+    "cityName": "מע'אר",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "מעברות",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "מעגלים",
+    "zoneId": "west hanegev"
+  },
+  {
+    "cityName": "מעגן",
+    "zoneId": "south golan"
+  },
+  {
+    "cityName": "מעגן מיכאל",
+    "zoneId": "menasha"
+  },
+  {
+    "cityName": "מעוז חיים",
+    "zoneId": "bikaat bet shaan"
+  },
+  {
+    "cityName": "מעון",
+    "zoneId": "yehuda"
+  },
+  {
+    "cityName": "מעונה",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "מעיין ברוך",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "מעיין צבי",
+    "zoneId": "menasha"
+  },
+  {
+    "cityName": "מעיליא",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "מעלה אדומים",
+    "zoneId": "yehuda"
+  },
+  {
+    "cityName": "מעלה אפרים כל ישובי מוא\"ז ערבות הירדן - ארגמן",
+    "zoneId": "bikaa"
+  },
+  {
+    "cityName": "מעלה גלבוע",
+    "zoneId": "bikaat bet shaan"
+  },
+  {
+    "cityName": "מעלה גמלא",
+    "zoneId": "south golan"
+  },
+  {
+    "cityName": "מעלה החמישה",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "מעלה לבונה",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "מעלה מכמש",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "מעלה עירון",
+    "zoneId": "wedi era"
+  },
+  {
+    "cityName": "מעלה עמוס",
+    "zoneId": "yehuda"
+  },
+  {
+    "cityName": "מעלות תרשיחא",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "מענית",
+    "zoneId": "menasha"
+  },
+  {
+    "cityName": "מפלסים",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "מצדות יהודה",
+    "zoneId": "yehuda"
+  },
+  {
+    "cityName": "מצובה",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "מצוק עורבים",
+    "zoneId": "west golan"
+  },
+  {
+    "cityName": "מצליח",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "מצפה",
+    "zoneId": "south galil"
+  },
+  {
+    "cityName": "מצפה אבי\"ב",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "מצפה אילן",
+    "zoneId": "wedi era"
+  },
+  {
+    "cityName": "מצפה יריחו",
+    "zoneId": "yehuda"
+  },
+  {
+    "cityName": "מצפה רמון",
+    "zoneId": "south hanegev"
+  },
+  {
+    "cityName": "מצפה שלם",
+    "zoneId": "dead sea"
+  },
+  {
+    "cityName": "מצר",
+    "zoneId": "wedi era"
+  },
+  {
+    "cityName": "מרגליות",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "מרום גולן",
+    "zoneId": "west golan"
+  },
+  {
+    "cityName": "מרחב עם",
+    "zoneId": "south hanegev"
+  },
+  {
+    "cityName": "מרכז כ\"ח",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "מרכז שפירא",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "משאבי שדה",
+    "zoneId": "south hanegev"
+  },
+  {
+    "cityName": "משגב דב",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "משגב עם",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "משהד",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "משואה",
+    "zoneId": "bikaa"
+  },
+  {
+    "cityName": "משואות יצחק",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "משכיות",
+    "zoneId": "bikaa"
+  },
+  {
+    "cityName": "משמר איילון",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "משמר דוד",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "משמר הירדן",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "משמר הנגב",
+    "zoneId": "center hanegev"
+  },
+  {
+    "cityName": "משמר העמק",
+    "zoneId": "wedi era"
+  },
+  {
+    "cityName": "משמר השבעה",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "משמר השרון",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "משמרות",
+    "zoneId": "menasha"
+  },
+  {
+    "cityName": "משמרת",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "משען",
+    "zoneId": "west lachis"
+  },
+  {
+    "cityName": "מתן",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "מתת",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "מתתיהו",
+    "zoneId": "yarkon"
+  },
+  {
+    "cityName": "נאות גולן",
+    "zoneId": "south golan"
+  },
+  {
+    "cityName": "נאות הכיכר",
+    "zoneId": "dead sea"
+  },
+  {
+    "cityName": "נאות מרדכי",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "נאות סמדר",
+    "zoneId": "haharava"
+  },
+  {
+    "cityName": "נאעורה",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "נבטים",
+    "zoneId": "center hanegev"
+  },
+  {
+    "cityName": "נגבה",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "נגוהות",
+    "zoneId": "yehuda"
+  },
+  {
+    "cityName": "נהורה",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "נהלל",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "נהריה",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "נוב",
+    "zoneId": "south golan"
+  },
+  {
+    "cityName": "נוגה",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "נוה צוף",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "נווה",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "נווה אור",
+    "zoneId": "bikaat bet shaan"
+  },
+  {
+    "cityName": "נווה אטי''ב",
+    "zoneId": "west golan"
+  },
+  {
+    "cityName": "נווה אילן",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "נווה איתן",
+    "zoneId": "bikaat bet shaan"
+  },
+  {
+    "cityName": "נווה דניאל",
+    "zoneId": "yehuda"
+  },
+  {
+    "cityName": "נווה זוהר",
+    "zoneId": "dead sea"
+  },
+  {
+    "cityName": "נווה זיו",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "נווה חריף",
+    "zoneId": "haharava"
+  },
+  {
+    "cityName": "נווה ים",
+    "zoneId": "hakarmel"
+  },
+  {
+    "cityName": "נווה ימין",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "נווה ירק",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "נווה מבטח",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "נווה מיכאל – רוגלית",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "נווה שלום",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "נועם",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "נוף איילון",
+    "zoneId": "yarkon"
+  },
+  {
+    "cityName": "נוף הגליל",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "נופי פרת",
+    "zoneId": "yehuda"
+  },
+  {
+    "cityName": "נופים",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "נופית",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "נופך",
+    "zoneId": "yarkon"
+  },
+  {
+    "cityName": "נוקדים",
+    "zoneId": "yehuda"
+  },
+  {
+    "cityName": "נורדיה",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "נורית",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "נחושה",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "נחל עוז",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "נחלה",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "נחליאל",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "נחלים",
+    "zoneId": "yarkon"
+  },
+  {
+    "cityName": "נחם",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "נחף",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "נחשולים",
+    "zoneId": "hakarmel"
+  },
+  {
+    "cityName": "נחשון",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "נחשונים",
+    "zoneId": "yarkon"
+  },
+  {
+    "cityName": "נטועה",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "נטור",
+    "zoneId": "south golan"
+  },
+  {
+    "cityName": "נטע",
+    "zoneId": "yehuda"
+  },
+  {
+    "cityName": "נטעים",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "נטף",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "ניין",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "ניל\"י",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "ניצן א'",
+    "zoneId": "west lachis"
+  },
+  {
+    "cityName": "ניצן ב'",
+    "zoneId": "west lachis"
+  },
+  {
+    "cityName": "ניצנה",
+    "zoneId": "south hanegev"
+  },
+  {
+    "cityName": "ניצני עוז",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "ניצנים",
+    "zoneId": "west lachis"
+  },
+  {
+    "cityName": "ניר אליהו",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "ניר בנים",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "ניר גלים",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "ניר דוד",
+    "zoneId": "bikaat bet shaan"
+  },
+  {
+    "cityName": "ניר ח\"ן",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "ניר יפה",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "ניר יצחק",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "ניר ישראל",
+    "zoneId": "west lachis"
+  },
+  {
+    "cityName": "ניר משה",
+    "zoneId": "west hanegev"
+  },
+  {
+    "cityName": "ניר עוז",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "ניר עם",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "ניר עציון",
+    "zoneId": "hakarmel"
+  },
+  {
+    "cityName": "ניר עקיבא",
+    "zoneId": "west hanegev"
+  },
+  {
+    "cityName": "ניר צבי",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "נירים",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "נירית",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "נמרוד",
+    "zoneId": "west golan"
+  },
+  {
+    "cityName": "נס הרים",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "נס עמים",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "נס ציונה",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "נעלה",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "נעמ\"ה",
+    "zoneId": "bikaa"
+  },
+  {
+    "cityName": "נען",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "נערן",
+    "zoneId": "bikaa"
+  },
+  {
+    "cityName": "נצר חזני כל ישובי מוא\"ז שדות דן- אחיעזר",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "נצר סרני",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "נצרת",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "נריה",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "נשר",
+    "zoneId": "hamifraz"
+  },
+  {
+    "cityName": "נתיב הגדוד",
+    "zoneId": "bikaa"
+  },
+  {
+    "cityName": "נתיב הל\"ה",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "נתיב השיירה",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "נתניה",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "סאג'ור",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "סאסא",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "סביון",
+    "zoneId": "dan"
+  },
+  {
+    "cityName": "סגולה",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "סוואעד חמירה",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "סוסיה",
+    "zoneId": "yehuda"
+  },
+  {
+    "cityName": "סופה",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "סח'נין",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "סלמה",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "סלעית",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "סמר",
+    "zoneId": "haharava"
+  },
+  {
+    "cityName": "סנדלה",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "סנסנה",
+    "zoneId": "center hanegev"
+  },
+  {
+    "cityName": "סעד",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "סער",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "ספיר",
+    "zoneId": "haharava"
+  },
+  {
+    "cityName": "סתריה",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "ע'ג'ר",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "עבדון",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "עברון",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "עגור",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "עדי",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "עדנים",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "עוזה",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "עוזייר",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "עולש",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "עומר",
+    "zoneId": "center hanegev"
+  },
+  {
+    "cityName": "עופר",
+    "zoneId": "hakarmel"
+  },
+  {
+    "cityName": "עוצם",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "עזוז",
+    "zoneId": "south hanegev"
+  },
+  {
+    "cityName": "עזר",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "עזריאל",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "עזריה",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "עזריקם",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "עטרת",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "עידן",
+    "zoneId": "haharava"
+  },
+  {
+    "cityName": "עילבון",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "עילוט",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "עין איילה",
+    "zoneId": "hakarmel"
+  },
+  {
+    "cityName": "עין אל אסד",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "עין אל-סהלה(",
+    "zoneId": "wedi era"
+  },
+  {
+    "cityName": "עין גב",
+    "zoneId": "south golan"
+  },
+  {
+    "cityName": "עין גדי",
+    "zoneId": "dead sea"
+  },
+  {
+    "cityName": "עין דור",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "עין הבשור",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "עין הוד",
+    "zoneId": "hakarmel"
+  },
+  {
+    "cityName": "עין החורש",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "עין המפרץ",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "עין הנצי''ב",
+    "zoneId": "bikaat bet shaan"
+  },
+  {
+    "cityName": "עין העמק",
+    "zoneId": "wedi era"
+  },
+  {
+    "cityName": "עין השופט",
+    "zoneId": "wedi era"
+  },
+  {
+    "cityName": "עין השלושה",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "עין ורד",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "עין זיוון",
+    "zoneId": "west golan"
+  },
+  {
+    "cityName": "עין חוד",
+    "zoneId": "hakarmel"
+  },
+  {
+    "cityName": "עין חצבה",
+    "zoneId": "haharava"
+  },
+  {
+    "cityName": "עין חרוד איחוד",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "עין חרוד מאוחד",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "עין יהב",
+    "zoneId": "haharava"
+  },
+  {
+    "cityName": "עין יעקב",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "עין כרמל",
+    "zoneId": "hakarmel"
+  },
+  {
+    "cityName": "עין מאהל",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "עין נקובא",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "עין עירון",
+    "zoneId": "menasha"
+  },
+  {
+    "cityName": "עין צורים",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "עין ראפה",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "עין שמר",
+    "zoneId": "menasha"
+  },
+  {
+    "cityName": "עין שריד",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "עין תמר",
+    "zoneId": "dead sea"
+  },
+  {
+    "cityName": "עיר אובות",
+    "zoneId": "haharava"
+  },
+  {
+    "cityName": "עכו",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "עלומים",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "עלי",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "עלי זהב",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "עלמה",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "עמוקה",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "עמיעד",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "עמיעוז",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "עמיר",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "עמנואל",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "עמקה",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "ענב",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "עספיא",
+    "zoneId": "hakarmel"
+  },
+  {
+    "cityName": "עפולה",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "עפרה",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "עץ אפרים",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "עצמון-שגב",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "עראבה",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "ערב אל נעים",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "ערד",
+    "zoneId": "south hanegev"
+  },
+  {
+    "cityName": "ערוגות",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "ערערה בנגב מוא\"ז אל קסום - דריג'את",
+    "zoneId": "south hanegev"
+  },
+  {
+    "cityName": "עשרת",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "עתלית",
+    "zoneId": "hakarmel"
+  },
+  {
+    "cityName": "עתניאל",
+    "zoneId": "yehuda"
+  },
+  {
+    "cityName": "פארן",
+    "zoneId": "haharava"
+  },
+  {
+    "cityName": "פדואל",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "פדויים",
+    "zoneId": "west hanegev"
+  },
+  {
+    "cityName": "פדיה",
+    "zoneId": "hasfla"
   },
   {
     "cityName": "פוריה כפר עבודה",
@@ -736,3095 +3692,95 @@
     "zoneId": "south galil"
   },
   {
-    "cityName": "רביד",
-    "zoneId": "south galil"
+    "cityName": "פורת",
+    "zoneId": "sharon"
   },
   {
-    "cityName": "ואדי אל חמאם",
-    "zoneId": "south galil"
+    "cityName": "פטיש",
+    "zoneId": "west hanegev"
   },
   {
-    "cityName": "אור יהודה",
-    "zoneId": "dan"
+    "cityName": "פלך",
+    "zoneId": "aleyon galil"
   },
   {
-    "cityName": "אזור",
-    "zoneId": "dan"
-  },
-  {
-    "cityName": "בני ברק",
-    "zoneId": "dan"
-  },
-  {
-    "cityName": "בת-ים",
-    "zoneId": "dan"
-  },
-  {
-    "cityName": "גבעת שמואל",
-    "zoneId": "dan"
-  },
-  {
-    "cityName": "גבעתיים",
-    "zoneId": "dan"
-  },
-  {
-    "cityName": "גני תקווה",
-    "zoneId": "dan"
-  },
-  {
-    "cityName": "הרצליה",
-    "zoneId": "dan"
-  },
-  {
-    "cityName": "חולון",
-    "zoneId": "dan"
-  },
-  {
-    "cityName": "יהוד מונוסון",
-    "zoneId": "dan"
-  },
-  {
-    "cityName": "כפר שמריהו",
-    "zoneId": "dan"
-  },
-  {
-    "cityName": "סביון",
-    "zoneId": "dan"
-  },
-  {
-    "cityName": "פתח תקווה",
-    "zoneId": "dan"
-  },
-  {
-    "cityName": "קריית אונו",
-    "zoneId": "dan"
-  },
-  {
-    "cityName": "רמת גן",
-    "zoneId": "dan"
-  },
-  {
-    "cityName": "רמת השרון",
-    "zoneId": "dan"
-  },
-  {
-    "cityName": "תל אביב יפו",
-    "zoneId": "dan"
-  },
-  {
-    "cityName": "גבעת השלושה",
-    "zoneId": "dan"
-  },
-  {
-    "cityName": "גת רימון",
-    "zoneId": "dan"
-  },
-  {
-    "cityName": "כפר סירקין",
-    "zoneId": "dan"
-  },
-  {
-    "cityName": "מגשימים",
-    "zoneId": "dan"
-  },
-  {
-    "cityName": "מַעַש",
-    "zoneId": "dan"
-  },
-  {
-    "cityName": "גליל ים",
-    "zoneId": "dan"
-  },
-  {
-    "cityName": "דיםונה",
-    "zoneId": "south hanegev"
-  },
-  {
-    "cityName": "ירוחם",
-    "zoneId": "south hanegev"
-  },
-  {
-    "cityName": "כסייפה",
-    "zoneId": "south hanegev"
-  },
-  {
-    "cityName": "מצפה רמון",
-    "zoneId": "south hanegev"
-  },
-  {
-    "cityName": "ערד",
-    "zoneId": "south hanegev"
-  },
-  {
-    "cityName": "אל-קסום  דריגאת",
-    "zoneId": "south hanegev"
-  },
-  {
-    "cityName": "מולדה",
-    "zoneId": "south hanegev"
-  },
-  {
-    "cityName": "מחלול",
-    "zoneId": "south hanegev"
-  },
-  {
-    "cityName": "נוה מדבר  אבו קרינאת",
-    "zoneId": "south hanegev"
-  },
-  {
-    "cityName": "אבו תלול",
-    "zoneId": "south hanegev"
-  },
-  {
-    "cityName": "ביר הדאג",
-    "zoneId": "south hanegev"
-  },
-  {
-    "cityName": "קצר א סיר",
-    "zoneId": "south hanegev"
-  },
-  {
-    "cityName": "אשלים",
-    "zoneId": "south hanegev"
-  },
-  {
-    "cityName": "באר מילכה",
-    "zoneId": "south hanegev"
-  },
-  {
-    "cityName": "טללים",
-    "zoneId": "south hanegev"
-  },
-  {
-    "cityName": "כמהין",
-    "zoneId": "south hanegev"
-  },
-  {
-    "cityName": "מדרשת בן גוריון",
-    "zoneId": "south hanegev"
-  },
-  {
-    "cityName": "מרחב עם",
-    "zoneId": "south hanegev"
-  },
-  {
-    "cityName": "משאבי שדה",
-    "zoneId": "south hanegev"
-  },
-  {
-    "cityName": "ניצנה",
-    "zoneId": "south hanegev"
-  },
-  {
-    "cityName": "עזוז",
-    "zoneId": "south hanegev"
-  },
-  {
-    "cityName": "קדש ברנע",
-    "zoneId": "south hanegev"
-  },
-  {
-    "cityName": "רביבים",
-    "zoneId": "south hanegev"
-  },
-  {
-    "cityName": "רתמים",
-    "zoneId": "south hanegev"
-  },
-  {
-    "cityName": "שדה בוקר",
-    "zoneId": "south hanegev"
-  },
-  {
-    "cityName": "דאלית אל כרמל",
-    "zoneId": "hakarmel"
-  },
-  {
-    "cityName": "עספיא",
-    "zoneId": "hakarmel"
-  },
-  {
-    "cityName": "פוריידיס",
-    "zoneId": "hakarmel"
-  },
-  {
-    "cityName": "בית אורן",
-    "zoneId": "hakarmel"
-  },
-  {
-    "cityName": "בית צבי",
-    "zoneId": "hakarmel"
-  },
-  {
-    "cityName": "בת שלמה",
-    "zoneId": "hakarmel"
-  },
-  {
-    "cityName": "גבע כרמל",
-    "zoneId": "hakarmel"
-  },
-  {
-    "cityName": "דור",
-    "zoneId": "hakarmel"
-  },
-  {
-    "cityName": "הבונים",
-    "zoneId": "hakarmel"
-  },
-  {
-    "cityName": "כרם מהרל",
-    "zoneId": "hakarmel"
-  },
-  {
-    "cityName": "מאיר שפיה",
-    "zoneId": "hakarmel"
-  },
-  {
-    "cityName": "מגדים",
-    "zoneId": "hakarmel"
-  },
-  {
-    "cityName": "נווה ים",
-    "zoneId": "hakarmel"
-  },
-  {
-    "cityName": "נחשולים",
-    "zoneId": "hakarmel"
-  },
-  {
-    "cityName": "ניר עציון",
-    "zoneId": "hakarmel"
-  },
-  {
-    "cityName": "עופר",
-    "zoneId": "hakarmel"
-  },
-  {
-    "cityName": "עין איילה",
-    "zoneId": "hakarmel"
-  },
-  {
-    "cityName": "עין הוד",
-    "zoneId": "hakarmel"
-  },
-  {
-    "cityName": "עין חוד",
-    "zoneId": "hakarmel"
-  },
-  {
-    "cityName": "עין כרמל",
-    "zoneId": "hakarmel"
-  },
-  {
-    "cityName": "עתלית",
-    "zoneId": "hakarmel"
-  },
-  {
-    "cityName": "חיפה",
-    "zoneId": "hamifraz"
-  },
-  {
-    "cityName": "טירת הכרמל",
-    "zoneId": "hamifraz"
-  },
-  {
-    "cityName": "נשר",
-    "zoneId": "hamifraz"
-  },
-  {
-    "cityName": "קריית מוצקין",
-    "zoneId": "hamifraz"
-  },
-  {
-    "cityName": "קריית ים",
-    "zoneId": "hamifraz"
-  },
-  {
-    "cityName": "קריית ביאליק",
-    "zoneId": "hamifraz"
-  },
-  {
-    "cityName": "קריית אתא",
-    "zoneId": "hamifraz"
-  },
-  {
-    "cityName": "רכסים",
-    "zoneId": "hamifraz"
-  },
-  {
-    "cityName": "החותרים",
-    "zoneId": "hamifraz"
-  },
-  {
-    "cityName": "כפר גלים",
-    "zoneId": "hamifraz"
-  },
-  {
-    "cityName": "איבטין",
-    "zoneId": "hamifraz"
-  },
-  {
-    "cityName": "אושה",
-    "zoneId": "hamifraz"
-  },
-  {
-    "cityName": "יגור",
-    "zoneId": "hamifraz"
-  },
-  {
-    "cityName": "כפר ביאליק",
-    "zoneId": "hamifraz"
-  },
-  {
-    "cityName": "כפר המכבי",
-    "zoneId": "hamifraz"
-  },
-  {
-    "cityName": "כפר הנוער הדתי",
-    "zoneId": "hamifraz"
-  },
-  {
-    "cityName": "כפר חסידים א'",
-    "zoneId": "hamifraz"
-  },
-  {
-    "cityName": "כפר חסידים ב'",
-    "zoneId": "hamifraz"
-  },
-  {
-    "cityName": "רמת יוחנן",
-    "zoneId": "hamifraz"
-  },
-  {
-    "cityName": "איכסאל",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "דבוריה",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "זרזיר",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "יפיע",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "כעביה  טבאש חגאגרה",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "כפר כנא",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "כפר תבור",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "מגדל העמק",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "משהד",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "נוף הגליל",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "נצרת",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "עילוט",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "עין מאהל",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "עפולה",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "קרית טבעון",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "בסמת טבעון",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "ריינה",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "רמת ישי",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "שבלי אום אל גנם",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "דחי",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "כפר מצר",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "ניין",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "סולם",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "אביטל",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "אדירים",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "אומן",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "ברק",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "גבע",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "גדיש",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "גדעונה",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "גן נר",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "דבורה",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "חבר",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "טמרה",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "יזרעאל",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "יעל",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "כפר יחזקאל",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "מגן שאול",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "מוקייבלה",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "מיטב",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "מלאה",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "נאעורה",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "נורית",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "ניר יפה",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "עין חרוד מאוחד",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "עין חרוד איחוד",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "פרזון",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "סנדלה",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "רם און",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "רמת צבי",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "תל יוסף",
-    "zoneId": "haamakim"
-  },
-  {
-    "cityName": "أום אל פחם",
-    "zoneId": "wedi era"
-  },
-  {
-    "cityName": "באקה אל גרבייה",
-    "zoneId": "wedi era"
-  },
-  {
-    "cityName": "ברטעה",
-    "zoneId": "wedi era"
-  },
-  {
-    "cityName": "מועאוויה",
-    "zoneId": "wedi era"
-  },
-  {
-    "cityName": "עין אל-סהלה",
-    "zoneId": "wedi era"
-  },
-  {
-    "cityName": "ג'ת",
-    "zoneId": "wedi era"
-  },
-  {
-    "cityName": "חריש",
-    "zoneId": "wedi era"
-  },
-  {
-    "cityName": "יקנעם עילית",
-    "zoneId": "wedi era"
-  },
-  {
-    "cityName": "כפר קרע",
-    "zoneId": "wedi era"
-  },
-  {
-    "cityName": "מעלה עירון",
-    "zoneId": "wedi era"
-  },
-  {
-    "cityName": "ערערה",
-    "zoneId": "wedi era"
-  },
-  {
-    "cityName": "אום אל קוטוף",
-    "zoneId": "wedi era"
-  },
-  {
-    "cityName": "אל עריאן",
-    "zoneId": "wedi era"
-  },
-  {
-    "cityName": "מגל",
-    "zoneId": "wedi era"
-  },
-  {
-    "cityName": "מי עמי",
-    "zoneId": "wedi era"
-  },
-  {
-    "cityName": "מייסר",
-    "zoneId": "wedi era"
-  },
-  {
-    "cityName": "מצפה אילן",
-    "zoneId": "wedi era"
-  },
-  {
-    "cityName": "מצר",
-    "zoneId": "wedi era"
-  },
-  {
-    "cityName": "קציר",
-    "zoneId": "wedi era"
-  },
-  {
-    "cityName": "רגבים",
-    "zoneId": "wedi era"
-  },
-  {
-    "cityName": "אליקים",
-    "zoneId": "wedi era"
-  },
-  {
-    "cityName": "גבעת עוז",
-    "zoneId": "wedi era"
-  },
-  {
-    "cityName": "גלעד",
-    "zoneId": "wedi era"
-  },
-  {
-    "cityName": "דליה",
-    "zoneId": "wedi era"
-  },
-  {
-    "cityName": "יקנעם המושבה",
-    "zoneId": "wedi era"
-  },
-  {
-    "cityName": "הזורע",
-    "zoneId": "wedi era"
-  },
-  {
-    "cityName": "מגידו",
-    "zoneId": "wedi era"
-  },
-  {
-    "cityName": "מדרך עוז",
-    "zoneId": "wedi era"
-  },
-  {
-    "cityName": "משמר העמק",
-    "zoneId": "wedi era"
-  },
-  {
-    "cityName": "עין העמק",
-    "zoneId": "wedi era"
-  },
-  {
-    "cityName": "עין השופט",
-    "zoneId": "wedi era"
-  },
-  {
-    "cityName": "רמת השופט",
-    "zoneId": "wedi era"
-  },
-  {
-    "cityName": "רמות מנשה",
-    "zoneId": "wedi era"
-  },
-  {
-    "cityName": "גבעת נילי",
-    "zoneId": "wedi era"
-  },
-  {
-    "cityName": "‏אפרת",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "ביתר עלית",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "מעלה אדומים",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "קריית ארבע",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "שומריה",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "אלון שבות",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "אלעזר",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "אספר",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "בת עין",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "הר גילה",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "כפר עציון",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "כרמי צור",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "מגדל עוז",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "מעלה עמוס",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "נווה דניאל",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "נוקדים",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "קדר",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "ראש צורים",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "תקוע",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "אלון",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "כפר אדומים",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "מצפה יריחו",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "נופי פרת",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "עלמון",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "אדוריים",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "בית חגי",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "כרמל",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "מעון",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "בית יתיר",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "מצדות יהודה",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "נגוהות",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "סוסיה",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "עתניאל",
-    "zoneId": "yehuda"
+    "cityName": "פלמחים כל ישובי מוא\"ז חבל יבנה- בית גמליאל",
+    "zoneId": "lachis"
   },
   {
     "cityName": "פני חבר",
     "zoneId": "yehuda"
   },
   {
-    "cityName": "שמעיה",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "שני לבנה",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "תלם",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "אליאב",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "אמציה",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "בני דקלים",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "כרמי קטיף",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "נטע",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "שקף",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "הר עמשא",
-    "zoneId": "yehuda"
-  },
-  {
-    "cityName": "אבנת",
-    "zoneId": "dead sea"
-  },
-  {
-    "cityName": "מצפה שלם",
-    "zoneId": "dead sea"
-  },
-  {
-    "cityName": "אלמוג",
-    "zoneId": "dead sea"
-  },
-  {
-    "cityName": "בית הערבה",
-    "zoneId": "dead sea"
-  },
-  {
-    "cityName": "ורדי יריחו",
-    "zoneId": "dead sea"
-  },
-  {
-    "cityName": "קליה",
-    "zoneId": "dead sea"
-  },
-  {
-    "cityName": "נאוה הכיכר",
-    "zoneId": "dead sea"
-  },
-  {
-    "cityName": "נווה זוהר",
-    "zoneId": "dead sea"
-  },
-  {
-    "cityName": "עין גדי",
-    "zoneId": "dead sea"
-  },
-  {
-    "cityName": "עין תמר",
-    "zoneId": "dead sea"
-  },
-  {
-    "cityName": "ירושלים",
-    "zoneId": "jerujalem"
-  },
-  {
-    "cityName": "גבעת זאב",
-    "zoneId": "jerujalem"
-  },
-  {
-    "cityName": "מבשרת ציון",
-    "zoneId": "jerujalem"
-  },
-  {
-    "cityName": "רמת רחל",
-    "zoneId": "jerujalem"
-  },
-  {
-    "cityName": "אבן ספיר",
-    "zoneId": "jerujalem"
-  },
-  {
-    "cityName": "אוריה",
-    "zoneId": "jerujalem"
-  },
-  {
-    "cityName": "בית זית",
-    "zoneId": "jerujalem"
-  },
-  {
-    "cityName": "מוצא עילית",
-    "zoneId": "jerujalem"
-  },
-  {
-    "cityName": "עמינדב",
-    "zoneId": "jerujalem"
-  },
-  {
-    "cityName": "גבעון החדשה",
-    "zoneId": "jerujalem"
-  },
-  {
-    "cityName": "אלעד",
-    "zoneId": "yarkon"
-  },
-  {
-    "cityName": "מודיעין-מכבים-רעות",
-    "zoneId": "yarkon"
-  },
-  {
-    "cityName": "מודיעין עילית",
-    "zoneId": "yarkon"
-  },
-  {
-    "cityName": "ראש העין",
-    "zoneId": "yarkon"
-  },
-  {
-    "cityName": "שהם",
-    "zoneId": "yarkon"
-  },
-  {
-    "cityName": "בארות יצחק",
-    "zoneId": "yarkon"
-  },
-  {
-    "cityName": "בית נחמיה",
-    "zoneId": "yarkon"
-  },
-  {
-    "cityName": "בית עריף",
-    "zoneId": "yarkon"
-  },
-  {
-    "cityName": "בני עטרות",
-    "zoneId": "yarkon"
-  },
-  {
-    "cityName": "ברקת",
-    "zoneId": "yarkon"
-  },
-  {
-    "cityName": "גבעת כ\"ח",
-    "zoneId": "yarkon"
-  },
-  {
-    "cityName": "גמזו",
-    "zoneId": "yarkon"
-  },
-  {
-    "cityName": "חדיד",
-    "zoneId": "yarkon"
-  },
-  {
-    "cityName": "טירת יהודה",
-    "zoneId": "yarkon"
-  },
-  {
-    "cityName": "כפר דניאל",
-    "zoneId": "yarkon"
-  },
-  {
-    "cityName": "כפר טרומן",
-    "zoneId": "yarkon"
-  },
-  {
-    "cityName": "כפר רות",
-    "zoneId": "yarkon"
-  },
-  {
-    "cityName": "לפיד",
-    "zoneId": "yarkon"
-  },
-  {
-    "cityName": "מבוא מודיעים",
-    "zoneId": "yarkon"
-  },
-  {
-    "cityName": "מזור",
-    "zoneId": "yarkon"
-  },
-  {
-    "cityName": "נופך",
-    "zoneId": "yarkon"
-  },
-  {
-    "cityName": "נחלים",
-    "zoneId": "yarkon"
-  },
-  {
-    "cityName": "רינתיה",
-    "zoneId": "yarkon"
-  },
-  {
-    "cityName": "שילת",
-    "zoneId": "yarkon"
-  },
-  {
-    "cityName": "נוף איילון",
-    "zoneId": "yarkon"
-  },
-  {
-    "cityName": "שעלבים",
-    "zoneId": "yarkon"
-  },
-  {
-    "cityName": "נחשונים",
-    "zoneId": "yarkon"
-  },
-  {
-    "cityName": "עינת",
-    "zoneId": "yarkon"
-  },
-  {
-    "cityName": "גני מודיעין",
-    "zoneId": "yarkon"
-  },
-  {
-    "cityName": "חשמונאים",
-    "zoneId": "yarkon"
-  },
-  {
-    "cityName": "כפר האורנים",
-    "zoneId": "yarkon"
-  },
-  {
-    "cityName": "מבוא חורון",
-    "zoneId": "yarkon"
-  },
-  {
-    "cityName": "מתתיהו",
-    "zoneId": "yarkon"
-  },
-  {
-    "cityName": "אשדוד",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "בני עייש",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "גדרה",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "גן יבנה",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "יבנה",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "קריית גת",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "קריית מלאכי",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "אביגדור",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "אחוזת",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "אורות",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "אמונים",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "באר טוביה",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "ביצרון",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "בית עזרא",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "גבעתי",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "חצב",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "חצור",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "ינון",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "כנות",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "כפר אחים",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "כפר ורבורג",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "נווה מבטח",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "ניר בנים",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "עזריקים",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "ערוגות",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "שדה עוזיהו",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "שתולים",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "תימורים",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "תלמי יחיאל",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "בית אלעזרי",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "בניה",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "גבעת ברנר",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "קדרון",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "גן הדרום",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "כפר מרדכי",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "מישר",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "משגב דב",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "עשרת",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "שדמה",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "כפר הנגיד",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "פלמחים",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "בית גמליאל",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "בן זכאי",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "בני דרום",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "ניר גלים",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "קבוצת יבנה",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "צופיה",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "גבעת ושינגטון",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "כרם יבנה",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "בית חלקיה",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "גני טל",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "חפץ חיים",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "יד בנימין",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "אל עזי",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "גת",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "נחלה",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "סגולה",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "קדמה",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "רבדים",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "שדה יואב",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "אחוזם",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "מנוחה",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "נהורה",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "נוגה",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "יד נתן",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "לכיש",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "ניר חיי",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "עוצם",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "שדה דוד",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "שדה משה",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "שחר",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "תלמים",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "אבן שמואל",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "איתן",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "אלומה",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "זרחיה",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "מרכז שפירא",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "משואות יצחק",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "נועם",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "עוזה",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "עין צורים",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "קוממיות",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "רוחמה",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "שלווה",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "שפיר",
-    "zoneId": "lachis"
-  },
-  {
-    "cityName": "בר גנים",
-    "zoneId": "west lachis"
-  },
-  {
-    "cityName": "בית שקמה",
-    "zoneId": "west lachis"
-  },
-  {
-    "cityName": "ברכיה",
-    "zoneId": "west lachis"
-  },
-  {
-    "cityName": "בת הדר",
-    "zoneId": "west lachis"
-  },
-  {
-    "cityName": "גיאה",
-    "zoneId": "west lachis"
-  },
-  {
-    "cityName": "הודיה",
-    "zoneId": "west lachis"
-  },
-  {
-    "cityName": "חלץ",
-    "zoneId": "west lachis"
-  },
-  {
-    "cityName": "כוכב מיכאל",
-    "zoneId": "west lachis"
-  },
-  {
-    "cityName": "כפר סילבר",
-    "zoneId": "west lachis"
-  },
-  {
-    "cityName": "מבקיעים",
-    "zoneId": "west lachis"
-  },
-  {
-    "cityName": "משען",
-    "zoneId": "west lachis"
-  },
-  {
-    "cityName": "ניצן א",
-    "zoneId": "west lachis"
-  },
-  {
-    "cityName": "ניצן ב",
-    "zoneId": "west lachis"
-  },
-  {
-    "cityName": "ניצני ישראל",
-    "zoneId": "west lachis"
-  },
-  {
-    "cityName": "תלמי יפה",
-    "zoneId": "west lachis"
-  },
-  {
-    "cityName": "אעבלין",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "בועיינה נוגידאת",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "ביר אל מכסור",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "דיר חנא",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "טורעאן",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "כאבול",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "כאוכב אבו אל היגא",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "כפר מנדא",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "מעאר",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "סחנין",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "עילבון",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "עראבה",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "שעב",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "שפרעם",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "עוזייר",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "רומאנה",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "רומת אל הייב",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "בית רימון",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "מסד",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "מצפה נטופה",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "חזון",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "טפחות",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "כלנית",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "כפר חנניה",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "עינבר",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "אבטליון",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "אשבל",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "אשחר",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "דמיידה",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "הררית",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "חוגייראת",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "חוסנייה",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "יובלים",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "יודפת",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "יעד",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "לוטם",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "מורן",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "מורשת",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "מנוף",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "מצפה אביב",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "סלמה",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "עצמון־שגב",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "ערב אל־נעים",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "צביה",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "קורנית",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "ראס אל־עין",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "רקפת",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "שורשים",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "שכניה",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "חנתון",
-    "zoneId": "center galil"
-  },
-  {
-    "cityName": "באר שבע",
-    "zoneId": "center hanegev"
-  },
-  {
-    "cityName": "חורה",
-    "zoneId": "center hanegev"
-  },
-  {
-    "cityName": "להבים",
-    "zoneId": "center hanegev"
-  },
-  {
-    "cityName": "לקיה",
-    "zoneId": "center hanegev"
-  },
-  {
-    "cityName": "מיתר",
-    "zoneId": "center hanegev"
-  },
-  {
-    "cityName": "נאות חובב",
-    "zoneId": "center hanegev"
-  },
-  {
-    "cityName": "עומר",
-    "zoneId": "center hanegev"
-  },
-  {
-    "cityName": "רהט",
-    "zoneId": "center hanegev"
-  },
-  {
-    "cityName": "שגב שלום",
-    "zoneId": "center hanegev"
-  },
-  {
-    "cityName": "תל שבע",
-    "zoneId": "center hanegev"
-  },
-  {
-    "cityName": "אום בטין",
-    "zoneId": "center hanegev"
-  },
-  {
-    "cityName": "אל-סייד",
-    "zoneId": "center hanegev"
-  },
-  {
-    "cityName": "תראבין א-צאנע",
-    "zoneId": "center hanegev"
-  },
-  {
-    "cityName": "בית קמה",
-    "zoneId": "center hanegev"
-  },
-  {
-    "cityName": "גבעות בר",
-    "zoneId": "center hanegev"
-  },
-  {
-    "cityName": "דבירה",
-    "zoneId": "center hanegev"
-  },
-  {
-    "cityName": "חצרים",
-    "zoneId": "center hanegev"
-  },
-  {
-    "cityName": "להב",
-    "zoneId": "center hanegev"
-  },
-  {
-    "cityName": "כרמים",
-    "zoneId": "center hanegev"
-  },
-  {
-    "cityName": "משמר הנגב",
-    "zoneId": "center hanegev"
-  },
-  {
-    "cityName": "נבטים",
-    "zoneId": "center hanegev"
-  },
-  {
-    "cityName": "שובל",
-    "zoneId": "center hanegev"
-  },
-  {
-    "cityName": "אשכולות",
-    "zoneId": "center hanegev"
-  },
-  {
-    "cityName": "סנסנה",
-    "zoneId": "center hanegev"
-  },
-  {
-    "cityName": "סוסיא",
-    "zoneId": "center hanegev"
-  },
-  {
-    "cityName": "אבשלום",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "בארי",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "בני נצרים",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "דקל",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "חולית",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "יבול",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "ישע",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "יתד",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "כיסופים",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "כרם שלום",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "מבטחים",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "מגן",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "נווה",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "ניר יצחק",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "נירים",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "נתיב העשרה",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "עין הבשור",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "עין השלושה",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "עמיעוז",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "פרי גן",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "צוחר",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "רעים",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "שדי אברהם",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "שדה ניצן",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "שלומית",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "תקומה",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "תלמי אליהו",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "תלמי יוסף",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "כרמיה",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "זיקים",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "יד מרדכי",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "ארז",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "כפר מימון",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "סעד",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "עלומים",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "שובה",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "שוקדה",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "אור הנר",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "איבים",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "גבים",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "כפר עזה",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "מפלסים",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "נחל עוז",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "ניר עם",
-    "zoneId": "otef gaza"
-  },
-  {
-    "cityName": "אליפז",
-    "zoneId": "haharava"
-  },
-  {
-    "cityName": "באר אורה",
-    "zoneId": "haharava"
-  },
-  {
-    "cityName": "גרופית",
-    "zoneId": "haharava"
-  },
-  {
-    "cityName": "יהל",
-    "zoneId": "haharava"
-  },
-  {
-    "cityName": "יטבתה",
-    "zoneId": "haharava"
-  },
-  {
-    "cityName": "לוטן",
-    "zoneId": "haharava"
-  },
-  {
-    "cityName": "נאות סמדר",
-    "zoneId": "haharava"
-  },
-  {
-    "cityName": "נווה חריף",
-    "zoneId": "haharava"
-  },
-  {
-    "cityName": "סמר",
-    "zoneId": "haharava"
-  },
-  {
-    "cityName": "קטורה",
-    "zoneId": "haharava"
-  },
-  {
-    "cityName": "שחרות",
-    "zoneId": "haharava"
-  },
-  {
-    "cityName": "שיטים",
-    "zoneId": "haharava"
-  },
-  {
-    "cityName": "חצבה",
-    "zoneId": "haharava"
-  },
-  {
-    "cityName": "ספיר",
-    "zoneId": "haharava"
-  },
-  {
-    "cityName": "עידן",
-    "zoneId": "haharava"
-  },
-  {
-    "cityName": "עיר אובות",
-    "zoneId": "haharava"
-  },
-  {
-    "cityName": "פארן",
-    "zoneId": "haharava"
-  },
-  {
-    "cityName": "צופר",
-    "zoneId": "haharava"
-  },
-  {
-    "cityName": "צוקים",
-    "zoneId": "haharava"
-  },
-  {
-    "cityName": "עין חצבה",
-    "zoneId": "haharava"
-  },
-  {
-    "cityName": "בוקעתא",
-    "zoneId": "west golan"
-  },
-  {
-    "cityName": "מג'דל שמס",
-    "zoneId": "west golan"
-  },
-  {
-    "cityName": "מסעדה",
-    "zoneId": "west golan"
-  },
-  {
-    "cityName": "עין קיניא",
-    "zoneId": "west golan"
-  },
-  {
-    "cityName": "אודם",
-    "zoneId": "west golan"
-  },
-  {
-    "cityName": "אורטל",
-    "zoneId": "west golan"
-  },
-  {
-    "cityName": "אל רום",
-    "zoneId": "west golan"
-  },
-  {
-    "cityName": "מרום גולן",
-    "zoneId": "west golan"
-  },
-  {
-    "cityName": "נווה אטי״ב",
-    "zoneId": "west golan"
-  },
-  {
-    "cityName": "נמרוד",
-    "zoneId": "west golan"
-  },
-  {
-    "cityName": "עין זיוון",
-    "zoneId": "west golan"
-  },
-  {
-    "cityName": "קלע",
-    "zoneId": "west golan"
-  },
-  {
-    "cityName": "שעל",
-    "zoneId": "west golan"
-  },
-  {
-    "cityName": "רמת טראמפ",
-    "zoneId": "west golan"
-  },
-  {
-    "cityName": "מצוק עורבים",
-    "zoneId": "west golan"
-  },
-  {
-    "cityName": "גוש חלב",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "חורפיש",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "כפר ורדים",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "מטולה",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "מעיליא",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "מעלות–תרשיחא",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "נהריה",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "ע'ג'ר",
-    "zoneId": "kav haeimut"
+    "cityName": "פסגות",
+    "zoneId": "somron"
   },
   {
     "cityName": "פסוטה",
     "zoneId": "kav haeimut"
   },
   {
+    "cityName": "פעמי תש''ז",
+    "zoneId": "west hanegev"
+  },
+  {
+    "cityName": "פצאל",
+    "zoneId": "bikaa"
+  },
+  {
     "cityName": "פקיעין",
     "zoneId": "kav haeimut"
   },
   {
-    "cityName": "קריית שמונה",
+    "cityName": "פקיעין החדשה",
     "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "שלומי",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "ברעם",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "גונן",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "דן",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "דפנה",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "הגושרים",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "יפתח",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "יראון",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "כפר בלום",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "כפר גלעדי",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "כפר סאלד",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "להבות הבשן",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "מלכיה",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "מנרה",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "מעיין ברוך",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "משגב עם",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "נאות מרדכי",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "סאסא",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "עמיר",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "צבעון",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "שדה נחמיה",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "שמיר",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "שניר",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "בית הלל",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "דישון",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "יובל",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "מרגליות",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "מרכז כ\"ח",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "רמות נפתלי",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "שאר ישוב",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "אדמית",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "אילון",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "בן עמי",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "בצת",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "געתון",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "גשר הזיו",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "חניתה",
-    "zoneId": "kav haeimut"
-  },
-  {
-    "cityName": "אריאל",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "בית אל",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "בית אריה עופרים",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "עמנואל",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "קדומים",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "קרני שומרון",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "אש קודש",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "אחיה",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "בית חורון",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "גבע בנימין",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "דולב",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "טלמון",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "כוכב השחר",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "כוכב יעקב",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "מגרון",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "מעלה לבונה",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "מעלה מכמש",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "נילי",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "נעלה",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "נחליאל",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "נווה צוף",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "עטרת",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "עלי",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "עפרה",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "פסגות",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "רימונים",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "שילה",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "נריה",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "כרם רעים",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "אבני חפץ",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "אלון מורה",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "איתמר",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "ברכין",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "חיננית",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "חרמש",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "טנא",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "יקיר",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "כפר תפוח",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "מבוא דותן",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "מגדלים",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "נופים",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "עלי זהב",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "ענב",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "פדואל",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "קריית נטפים",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "רבבה",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "רחלים",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "ריחן",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "שבט שומרון",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "שקד",
-    "zoneId": "somron"
-  },
-  {
-    "cityName": "באר יעקב",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "בית דגן",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "לוד",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "מזכרת בתיה",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "נס ציונה",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "קריית עקרון",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "ראשון לציון",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "רחובות",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "רמלה",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "בית חשמונאי",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "בית עוזיאל",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "גזר",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "גני הדר",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "גני יוחנן",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "חולדה",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "יד רמבים",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "יציץ",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "ישרש",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "כפר בילו",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "כפר בן נון",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "כפר שמואל",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "כרמי יוסף",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "מצליח",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "משמר איילון",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "משמר דוד",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "נען",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "נצר סירני",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "סתריה",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "עזריה",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "פדייה",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "פתחיה",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "רמות מאיר",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "אירוס",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "בית חנן",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "בית עובד",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "גאליה",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "גן שורק",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "נטעים",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "עיינות",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "אחיסמך",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "בן שמן",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "גינתון",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "כרם בן שמן",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "גבתון",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "גן שלמה",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "יסודות",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "נצר חזני",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "אחיעזר",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "גנות",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "זיתן",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "חמד",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "יגל",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "כפר חבד",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "משמר השבעה",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "ניר צבי",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "צפריה",
-    "zoneId": "hasfla"
-  },
-  {
-    "cityName": "אבו גוש",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "בית שמש",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "הר אדר",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "קריית יערים",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "אביעזר",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "אדרת",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "אשתאול",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "בית מאיר",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "בית נקופה",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "בקוע",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "בר גיורא",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "גבעת יערים",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "גבעת ישעיהו",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "גבעת שמש",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "גיזו",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "גפן",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "הראל",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "זכריה",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "זנוח",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "טל שחר",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "יד השמונה",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "ידידה",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "ישעי",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "כסלון",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "כפר אוריה",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "כפר זוהרים",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "לוזית",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "מבוא ביתר",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "מחסיה",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "מטע",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "מסילת ציון",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "מעלה החמישה",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "נווה אילן",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "נווה מיכאל רוגלית",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "נחם",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "נחושה",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "נחשון",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "נטף",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "נווה שלום",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "נווה תעוז",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "עגור",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "עין נקובא",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "עין ראפה",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "צור הדסה",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "צלפון",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "קריית ענבים",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "רמת רזיאל",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "שדות מיכה",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "שואבה",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "שורש",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "שריגים  ליאון",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "תעוז",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "תרום",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "בית גוברין",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "בית ניר",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "גלאון",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "כפר מנחם",
-    "zoneId": "sfelat yehuda"
-  },
-  {
-    "cityName": "אבן יהודה",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "אורנית",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "אליכין",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "אלפי מנשה",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "אלקנה",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "ג'לג'וליה",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "הוד ה",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "צור יגאל",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "כפר ברא",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "כפר סבא",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "כפר קאסם",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "נתניה",
-    "zoneId": "sharon"
   },
   {
     "cityName": "פרדסיה",
     "zoneId": "sharon"
   },
   {
-    "cityName": "קדימה צורן",
-    "zoneId": "sharon"
+    "cityName": "פרוד",
+    "zoneId": "aleyon galil"
   },
   {
-    "cityName": "קלנסווה",
-    "zoneId": "sharon"
+    "cityName": "פרזון",
+    "zoneId": "haamakim"
   },
   {
-    "cityName": "רעננה",
-    "zoneId": "sharon"
+    "cityName": "פרי גן",
+    "zoneId": "otef gaza"
   },
   {
-    "cityName": "תל",
-    "zoneId": "sharon"
+    "cityName": "פתח תקווה",
+    "zoneId": "dan"
   },
   {
-    "cityName": "מונד",
-    "zoneId": "sharon"
+    "cityName": "פתחיה",
+    "zoneId": "hasfla"
   },
   {
-    "cityName": "כפר יונה",
-    "zoneId": "sharon"
+    "cityName": "צביה",
+    "zoneId": "center galil"
   },
   {
-    "cityName": "אייל",
-    "zoneId": "sharon"
+    "cityName": "צבעון",
+    "zoneId": "kav haeimut"
   },
   {
-    "cityName": "אלישמע",
-    "zoneId": "sharon"
+    "cityName": "צובה",
+    "zoneId": "sfelat yehuda"
   },
   {
-    "cityName": "בית ברל",
-    "zoneId": "sharon"
+    "cityName": "צוחר",
+    "zoneId": "otef gaza"
   },
   {
-    "cityName": "גבעת חן",
-    "zoneId": "sharon"
+    "cityName": "צופיה",
+    "zoneId": "lachis"
   },
   {
-    "cityName": "גן חיים",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "גני עם",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "חגור",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "חורשים",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "ירחיב",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "ירקונה",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "כפר מלל",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "מתן",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "נווה ימין",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "נווה ירק",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "ניר אליהו",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "נירית",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "עדנים",
+    "cityName": "צופים",
     "zoneId": "sharon"
   },
   {
@@ -3832,139 +3788,19 @@
     "zoneId": "sharon"
   },
   {
+    "cityName": "צופר",
+    "zoneId": "haharava"
+  },
+  {
+    "cityName": "צוקי ים",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "צור הדסה",
+    "zoneId": "sfelat yehuda"
+  },
+  {
     "cityName": "צור יצחק",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "צור",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "נתן",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "רמות השבים",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "רמת הכובש",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "שדה ורבורג",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "שדי חמד",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "אודים",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "ארסוף",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "בית יהושע",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "בני ציון",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "בצרה",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "געש",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "חרוצים",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "יקום",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "כפר נטר",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "רשפון",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "שפיים",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "תל יצחק",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "בני דרור",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "גאולים",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "גנות הדר",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "חרות",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "ינוב",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "יעף",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "כפר הס",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "כפר יעבץ",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "משמרת",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "נורדיה",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "ניצני עוז",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "עזריאל",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "עין ורד",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "עין שריד",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "פורת",
     "zoneId": "sharon"
   },
   {
@@ -3972,307 +3808,679 @@
     "zoneId": "sharon"
   },
   {
-    "cityName": "שער אפרים",
+    "cityName": "צור נתן",
     "zoneId": "sharon"
   },
   {
-    "cityName": "תנובות",
+    "cityName": "צוריאל",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "צורית",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "ציפורי",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "צלפון",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "צפריה",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "צפרירים",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "צפת",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "צרופה",
+    "zoneId": "hakarmel"
+  },
+  {
+    "cityName": "צרעה",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "קבוצת יבנה",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "קדומים",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "קדימה צורן",
     "zoneId": "sharon"
   },
   {
-    "cityName": "אביחיל",
-    "zoneId": "sharon"
+    "cityName": "קדמה",
+    "zoneId": "lachis"
   },
   {
-    "cityName": "אומץ",
-    "zoneId": "sharon"
+    "cityName": "קדמת צבי",
+    "zoneId": "south golan"
   },
   {
-    "cityName": "אחיטוב",
-    "zoneId": "sharon"
+    "cityName": "קדר",
+    "zoneId": "yehuda"
   },
   {
-    "cityName": "אלישיב",
-    "zoneId": "sharon"
+    "cityName": "קדרון כל ישובי מוא\"ז גדרות- גן הדרום",
+    "zoneId": "lachis"
   },
   {
-    "cityName": "בארותיים",
-    "zoneId": "sharon"
+    "cityName": "קדש ברנע",
+    "zoneId": "south hanegev"
   },
   {
-    "cityName": "בורגתה",
-    "zoneId": "sharon"
+    "cityName": "קוממיות",
+    "zoneId": "lachis"
   },
   {
-    "cityName": "בחן",
-    "zoneId": "sharon"
+    "cityName": "קורנית",
+    "zoneId": "center galil"
   },
   {
-    "cityName": "בית הלוי",
-    "zoneId": "sharon"
+    "cityName": "קטורה",
+    "zoneId": "haharava"
   },
   {
-    "cityName": "בית",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "שער חפר",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "ביתן אהרן",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "בת חן",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "בת חפר",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "גאולי תימן",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "גבעת חיים איחוד",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "גבעת חיים מאוחד",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "גבעת שפירא",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "גן יאשיה",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "הדר עם",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "המעפיל",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "העוגן",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "חבצלת השרון",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "חגלה",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "חופית",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "חיבת ציון",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "חניאל",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "חרב לאת",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "יד חנה",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "כפר הראה",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "כפר ויתקין",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "כפר חיים",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "כפר ידידיה",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "כפר מונש",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "מכמורת",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "מעברות",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "משמר השרון",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "עולש",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "עין החורש",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "צוקי ים",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "שושנת העמקים",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "סלעית",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "עץ אפרים",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "צופים",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "שערי תקווה",
-    "zoneId": "sharon"
-  },
-  {
-    "cityName": "אור עקיבא",
-    "zoneId": "menasha"
-  },
-  {
-    "cityName": "בנימינה",
-    "zoneId": "menasha"
-  },
-  {
-    "cityName": "גבעת עדה",
-    "zoneId": "menasha"
-  },
-  {
-    "cityName": "ג׳סר א־זרקא",
-    "zoneId": "menasha"
-  },
-  {
-    "cityName": "זכרון יעקב",
-    "zoneId": "menasha"
-  },
-  {
-    "cityName": "חדרה",
-    "zoneId": "menasha"
-  },
-  {
-    "cityName": "פרדס חנה",
-    "zoneId": "menasha"
-  },
-  {
-    "cityName": "כרכור",
-    "zoneId": "menasha"
-  },
-  {
-    "cityName": "עמקים",
-    "zoneId": "menasha"
-  },
-  {
-    "cityName": "בית חנניה",
-    "zoneId": "menasha"
-  },
-  {
-    "cityName": "מעגן מיכאל",
-    "zoneId": "menasha"
-  },
-  {
-    "cityName": "מעיין צבי",
-    "zoneId": "menasha"
+    "cityName": "קיבוץ מרחביה",
+    "zoneId": "haamakim"
   },
   {
     "cityName": "קיסריה",
     "zoneId": "menasha"
   },
   {
-    "cityName": "שדות ים",
-    "zoneId": "menasha"
+    "cityName": "קלחים",
+    "zoneId": "west hanegev"
   },
   {
-    "cityName": "אלוני יצחק",
-    "zoneId": "menasha"
+    "cityName": "קלנסווה",
+    "zoneId": "sharon"
   },
   {
-    "cityName": "ברקאי",
-    "zoneId": "menasha"
+    "cityName": "קציר",
+    "zoneId": "wedi era"
   },
   {
-    "cityName": "גבעת חביבה",
-    "zoneId": "menasha"
+    "cityName": "קצר-א-סר כל ישובי מוא\"ז רמת נגב- אשלים",
+    "zoneId": "south hanegev"
   },
   {
-    "cityName": "גן השומרון",
-    "zoneId": "menasha"
+    "cityName": "קריית אונו",
+    "zoneId": "dan"
   },
   {
-    "cityName": "גן שמואל",
-    "zoneId": "menasha"
+    "cityName": "קריית אתא",
+    "zoneId": "hamifraz"
   },
   {
-    "cityName": "כפר גליקסון",
-    "zoneId": "menasha"
+    "cityName": "קריית ביאליק",
+    "zoneId": "hamifraz"
   },
   {
-    "cityName": "כפר פינס",
-    "zoneId": "menasha"
+    "cityName": "קריית גת",
+    "zoneId": "lachis"
   },
   {
-    "cityName": "להבות חביבה",
-    "zoneId": "menasha"
+    "cityName": "קריית ים",
+    "zoneId": "hamifraz"
   },
   {
-    "cityName": "מאור",
-    "zoneId": "menasha"
+    "cityName": "קריית מוצקין",
+    "zoneId": "hamifraz"
   },
   {
-    "cityName": "משמרות",
-    "zoneId": "menasha"
+    "cityName": "קריית מלאכי כל ישובי מוא\"ז באר טוביה- אביגדור",
+    "zoneId": "lachis"
   },
   {
-    "cityName": "מעינות",
-    "zoneId": "menasha"
+    "cityName": "קריית נטפים",
+    "zoneId": "somron"
   },
   {
-    "cityName": "עין עירון",
-    "zoneId": "menasha"
+    "cityName": "קריית ענבים",
+    "zoneId": "sfelat yehuda"
   },
   {
-    "cityName": "עין שמר",
-    "zoneId": "menasha"
+    "cityName": "קריית עקרון",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "קרית טבעון",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "קרית שמונה",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "קשת",
+    "zoneId": "south golan"
+  },
+  {
+    "cityName": "ראמה",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "ראס אל-עין",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "ראס עלי",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "ראש העין",
+    "zoneId": "yarkon"
+  },
+  {
+    "cityName": "ראש צורים",
+    "zoneId": "yehuda"
+  },
+  {
+    "cityName": "ראשון לציון",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "רבבה",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "רבדים",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "רביבים",
+    "zoneId": "south hanegev"
+  },
+  {
+    "cityName": "רגבה",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "רגבים כל ישובי מוא\"ז מגידו- אליקים",
+    "zoneId": "wedi era"
+  },
+  {
+    "cityName": "רהט",
+    "zoneId": "center hanegev"
+  },
+  {
+    "cityName": "רווחה",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "רוויה",
+    "zoneId": "bikaat bet shaan"
+  },
+  {
+    "cityName": "רוחמה",
+    "zoneId": "west hanegev"
+  },
+  {
+    "cityName": "רומאנה",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "רועי",
+    "zoneId": "bikaa"
+  },
+  {
+    "cityName": "רותם",
+    "zoneId": "bikaa"
+  },
+  {
+    "cityName": "רחובות",
+    "zoneId": "hasfla"
+  },
+  {
+    "cityName": "רחלים",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "ריחאנייה",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "ריחן",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "ריינה",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "רימונים",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "רינתיה",
+    "zoneId": "yarkon"
+  },
+  {
+    "cityName": "רם און",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "רמות",
+    "zoneId": "south golan"
+  },
+  {
+    "cityName": "רמות השבים",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "רמות נפתלי",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "רמת גן",
+    "zoneId": "dan"
+  },
+  {
+    "cityName": "רמת דוד",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "רמת הכובש",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "רמת השופט",
+    "zoneId": "wedi era"
+  },
+  {
+    "cityName": "רמת השרון",
+    "zoneId": "dan"
+  },
+  {
+    "cityName": "רמת טראמפ",
+    "zoneId": "west golan"
+  },
+  {
+    "cityName": "רמת יוחנן",
+    "zoneId": "hamifraz"
+  },
+  {
+    "cityName": "רמת ישי",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "רמת צבי",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "רמת רזיאל",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "רמת רחל",
+    "zoneId": "jerujalem"
+  },
+  {
+    "cityName": "רנן",
+    "zoneId": "west hanegev"
+  },
+  {
+    "cityName": "רעים",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "רעננה",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "רקפת",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "רשפון",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "רשפים",
+    "zoneId": "bikaat bet shaan"
+  },
+  {
+    "cityName": "רתמים",
+    "zoneId": "south hanegev"
+  },
+  {
+    "cityName": "שבי דרום",
+    "zoneId": "west hanegev"
+  },
+  {
+    "cityName": "שבי ציון",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "שבי שומרון",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "שבלי – אום אל גנם כל ישובי מוא\"ז בוסתאן אל מרג'- דחי",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "שגב שלום",
+    "zoneId": "center hanegev"
+  },
+  {
+    "cityName": "שדה אילן",
+    "zoneId": "south galil"
+  },
+  {
+    "cityName": "שדה אליהו",
+    "zoneId": "bikaat bet shaan"
+  },
+  {
+    "cityName": "שדה בוקר",
+    "zoneId": "south hanegev"
+  },
+  {
+    "cityName": "שדה דוד",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "שדה ורבורג",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "שדה יעקב",
+    "zoneId": "haamakim"
   },
   {
     "cityName": "שדה יצחק",
     "zoneId": "menasha"
   },
   {
+    "cityName": "שדה משה",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "שדה נחום",
+    "zoneId": "bikaat bet shaan"
+  },
+  {
+    "cityName": "שדה נחמיה",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "שדה ניצן",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "שדה עוזיהו",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "שדה צבי",
+    "zoneId": "west hanegev"
+  },
+  {
+    "cityName": "שדות מיכה",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "שדי אברהם",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "שדי חמד כל ישובי מועצה אזורית חוף השרון- אודים",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "שדי תרומות",
+    "zoneId": "bikaat bet shaan"
+  },
+  {
+    "cityName": "שדמות דבורה",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "שדמות מחולה",
+    "zoneId": "bikaa"
+  },
+  {
+    "cityName": "שדרות כל ישובי מוא\"ז אשכול- אבשלום",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "שואבה",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "שובה",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "שומרה",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "שוקדה",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "שורש",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "שורשים",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "שזור",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "שחר",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "שחרות",
+    "zoneId": "haharava"
+  },
+  {
+    "cityName": "שיבולים",
+    "zoneId": "west hanegev"
+  },
+  {
+    "cityName": "שיטים כל ישובי מוא\"ז ערבה תיכונה- חצבה",
+    "zoneId": "haharava"
+  },
+  {
+    "cityName": "שייח' דנון",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "שילה",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "שלווה",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "שלוחות",
+    "zoneId": "bikaat bet shaan"
+  },
+  {
+    "cityName": "שלומית",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "שלומציון",
+    "zoneId": "bikaa"
+  },
+  {
+    "cityName": "שלפים",
+    "zoneId": "bikaat bet shaan"
+  },
+  {
+    "cityName": "שמיר",
+    "zoneId": "kav haeimut"
+  },
+  {
+    "cityName": "שמעה",
+    "zoneId": "yehuda"
+  },
+  {
+    "cityName": "שמשית",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "שני ליבנה",
+    "zoneId": "yehuda"
+  },
+  {
+    "cityName": "שעב",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "שעל",
+    "zoneId": "west golan"
+  },
+  {
+    "cityName": "שער אפרים",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "שער הגולן",
+    "zoneId": "south golan"
+  },
+  {
     "cityName": "שער מנשה",
     "zoneId": "menasha"
   },
   {
+    "cityName": "שערי תקווה",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "שפיים",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "שפיר",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "שפר",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "שפרעם",
+    "zoneId": "center galil"
+  },
+  {
+    "cityName": "שקד",
+    "zoneId": "somron"
+  },
+  {
+    "cityName": "שריגים – ליאון",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "שריד",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "שתולים",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "תאשור",
+    "zoneId": "west hanegev"
+  },
+  {
+    "cityName": "תדהר כל ישובי מוא\"ז מרחבים- אשבול",
+    "zoneId": "west hanegev"
+  },
+  {
+    "cityName": "תובל",
+    "zoneId": "aleyon galil"
+  },
+  {
+    "cityName": "תומר",
+    "zoneId": "bikaa"
+  },
+  {
+    "cityName": "תושיה",
+    "zoneId": "otef gaza"
+  },
+  {
+    "cityName": "תימורים",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "תירוש",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "תל יוסף. כלל ישובי מוא\"ז עמק יזרעאל- אחוזת ברק",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "תל יצחק כל ישובי מוא\"ז לב השרון- בני דרור",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "תל מונד",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "תל עדשים",
+    "zoneId": "haamakim"
+  },
+  {
+    "cityName": "תל קציר",
+    "zoneId": "south golan"
+  },
+  {
+    "cityName": "תל תאומים",
+    "zoneId": "bikaat bet shaan"
+  },
+  {
+    "cityName": "תלמי אליהו",
+    "zoneId": "otef gaza"
+  },
+  {
     "cityName": "תלמי אלעזר",
     "zoneId": "menasha"
+  },
+  {
+    "cityName": "תלמי ביל''ו",
+    "zoneId": "west hanegev"
+  },
+  {
+    "cityName": "תלמי יפה",
+    "zoneId": "west lachis"
+  },
+  {
+    "cityName": "תלמים כל ישובי מוא\"ז שפיר- אבן שמואל",
+    "zoneId": "lachis"
+  },
+  {
+    "cityName": "תנובות כל ישובי מוא\"ז עמק חפר- אביחיל",
+    "zoneId": "sharon"
+  },
+  {
+    "cityName": "תעוז",
+    "zoneId": "sfelat yehuda"
+  },
+  {
+    "cityName": "תפרח",
+    "zoneId": "west hanegev"
   }
 ]
