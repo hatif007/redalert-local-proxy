@@ -79,6 +79,8 @@ const fetchFn =
     : (...args) =>
         import("node-fetch").then(({ default: fetch }) => fetch(...args));
 
+const WebSocket = require("ws");
+
 // -------------------------------------------------------------
 // ===================== ENV & BASIC CONFIG =====================
 // -------------------------------------------------------------
@@ -163,6 +165,15 @@ const TZEVA_BACKOFF_BASE_MS = Number(process.env.TZEVA_BACKOFF_BASE_MS || 400);
 const TZEVA_BACKOFF_MAX_MS = Number(process.env.TZEVA_BACKOFF_MAX_MS || 15000);
 
 // -------------------------------------------------------------
+// ✅ Tzeva Adom WebSocket (push channel: pre-alert + all-clear + active alerts)
+// -------------------------------------------------------------
+const TZEVAADOM_WS_ENABLED = String(process.env.TZEVAADOM_WS_ENABLED || "true").toLowerCase() === "true";
+const TZEVAADOM_WS_URL = process.env.TZEVAADOM_WS_URL || "wss://ws.tzevaadom.co.il/socket?platform=WEB";
+const WS_ALERT_TTL_MS = Number(process.env.WS_ALERT_TTL_MS || 180000); // 3 min
+const WS_PRE_ALERT_TTL_MS = Number(process.env.WS_PRE_ALERT_TTL_MS || 1200000); // 20 min
+const WS_ALL_CLEAR_TTL_MS = Number(process.env.WS_ALL_CLEAR_TTL_MS || 300000);  // 5 min
+
+// -------------------------------------------------------------
 // In-memory state
 // -------------------------------------------------------------
 let lastRaw = null;
@@ -221,6 +232,27 @@ const stats = {
   tzofarAttempts: 0,
   tzofarSuccess: 0,
   errors: 0,
+};
+
+// WebSocket state
+let wsConnected = false;
+let wsReconnectAttempt = 0;
+let wsLastConnectedAt = null;
+let wsAlertsFromWs = [];   // [{ id, title, category, cities, source, eventTs, threat, expiresAt }]
+let wsPreAlert = null;     // { bodyHe, bodyEn, titleHe, citiesIds, zoneIds, receivedAt, expiresAt }
+let wsAllClear = null;     // { bodyHe, receivedAt, expiresAt }
+
+// threat ID (Pushy/WS) → category string
+const WS_THREAT_CATEGORY = {
+  0: "rocket",
+  1: "hazmat",
+  2: "terrorist",
+  3: "earthquake",
+  4: "tsunami",
+  5: "uav",
+  6: "radiological",
+  9: "earthquake",
+  11: "rocket",
 };
 
 // -------------------------------------------------------------
@@ -344,12 +376,14 @@ function requirePublicKeyIfConfigured(req, res, next) {
 // -------------------------------------------------------------
 const zonesConfigPath = path.join(__dirname, "config", "zones.config.json");
 const cityZonesConfigPath = path.join(__dirname, "config", "city_zones.config.json");
+const orefCitiesConfigPath = path.join(__dirname, "config", "oref_cities.json");
 
 let zonesConfig = [];
 let cityZonesConfig = [];
 let zonesById = new Map(); // zoneId(norm) -> zoneConfig
 let cityZonesByName = new Map(); // cityKey -> zoneId(norm)
 let cityOriginalNameByKey = new Map();
+let cityNameByOrefId = new Map(); // OREF/TzevaAdom numeric cityId -> Hebrew city name
 
 function safeReadJson(filePath, defaultValue = []) {
   try {
@@ -409,10 +443,31 @@ function loadZonesConfigs() {
   zonesConfig = safeReadJson(zonesConfigPath, []);
   cityZonesConfig = safeReadJson(cityZonesConfigPath, []);
   buildZonesIndexes();
+
+  // Build OREF city-ID → Hebrew name map (used to resolve TzevaAdom citiesIds in pre-alerts)
+  const orefCities = safeReadJson(orefCitiesConfigPath, []);
+  cityNameByOrefId = new Map();
+  for (const c of orefCities) {
+    if (c.id > 0 && c.name) cityNameByOrefId.set(c.id, c.name);
+  }
+  console.log("[LocalProxy] OREF cities loaded:", cityNameByOrefId.size, "entries");
 }
 
 // Load once on boot
 loadZonesConfigs();
+
+// Resolve an array of TzevaAdom/OREF numeric city IDs to unique zone IDs
+function resolveZonesFromCityIds(cityIds) {
+  if (!Array.isArray(cityIds) || cityIds.length === 0) return [];
+  const zoneSet = new Set();
+  for (const id of cityIds) {
+    const cityName = cityNameByOrefId.get(Number(id));
+    if (!cityName) continue;
+    const zoneId = resolveZone(cityName);
+    if (zoneId) zoneSet.add(zoneId);
+  }
+  return Array.from(zoneSet);
+}
 
 // --------------------- zone enrich ---------------------
 function resolveZone(cityName) {
@@ -588,8 +643,8 @@ function normalizeTzevaAdomJson(json) {
 // -------------------------------------------------------------
 // ===================== Multi-source deduplication =====================
 // -------------------------------------------------------------
-// Priority: OREF (0) > Tzofar (1) > TzevaAdom (2)
-const SOURCE_PRIORITY = { oref: 0, tzofar: 1, tzevaadom: 2, "tzevaadom-direct": 3 };
+// Priority: OREF (0) > Tzofar (1) > TzevaAdom-WS (2) > TzevaAdom-HTTP (3)
+const SOURCE_PRIORITY = { oref: 0, tzofar: 1, "tzevaadom-ws": 2, tzevaadom: 3, "tzevaadom-direct": 4 };
 
 function deduplicateAlerts(alertsArr) {
   // Sort by source priority so higher-priority alerts are processed first
@@ -1039,9 +1094,123 @@ async function fetchAlertsSmart(force = false) {
 }
 
 // -------------------------------------------------------------
+// ===================== Tzeva Adom WebSocket (push channel) =====================
+// -------------------------------------------------------------
+function startTzevaAdomWebSocket() {
+  if (!TZEVAADOM_WS_ENABLED) {
+    log.info("[WS] Tzeva Adom WebSocket disabled (TZEVAADOM_WS_ENABLED=false)");
+    return;
+  }
+
+  log.info(`[WS] Connecting to ${TZEVAADOM_WS_URL} (attempt ${wsReconnectAttempt + 1})`);
+
+  let ws;
+  try {
+    ws = new WebSocket(TZEVAADOM_WS_URL, {
+      headers: {
+        "Origin": "https://www.tzevaadom.co.il",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+      },
+      handshakeTimeout: 10000,
+    });
+  } catch (e) {
+    log.error("[WS] Failed to create WebSocket:", e.message);
+    wsReconnectAttempt++;
+    const delay = Math.min(1000 * Math.pow(2, wsReconnectAttempt), 30000);
+    setTimeout(startTzevaAdomWebSocket, delay);
+    return;
+  }
+
+  ws.on("open", () => {
+    wsConnected = true;
+    wsLastConnectedAt = Date.now();
+    wsReconnectAttempt = 0;
+    log.info("[WS] Connected to Tzeva Adom WebSocket");
+  });
+
+  ws.on("message", (data) => {
+    const now = Date.now();
+    let msg;
+    try { msg = JSON.parse(data.toString()); } catch (e) { return; }
+
+    if (msg.type === "ALERT") {
+      const d = msg.data || {};
+      const cities = Array.isArray(d.cities) ? d.cities.map((c) => normalizeString(c)).filter(Boolean) : [];
+      const threatNum = Number(d.threat);
+      const category = WS_THREAT_CATEGORY[threatNum] || "alert";
+      const isDrill = d.isDrill === true;
+
+      log.info(`[WS] ALERT: threat=${d.threat} category=${category} cities=${cities.length} drill=${isDrill}`);
+
+      if (!isDrill && cities.length > 0) {
+        wsAlertsFromWs = cities.map((city) => ({
+          id: `ws-${now}-${city}`,
+          title: "צבע אדום",
+          category,
+          cities: [city],
+          source: "tzevaadom-ws",
+          eventTs: now,
+          threat: threatNum,
+          expiresAt: now + WS_ALERT_TTL_MS,
+        }));
+        // Bust polling cache so next request includes these immediately
+        lastFetchedAt = 0;
+      }
+
+    } else if (msg.type === "SYSTEM_MESSAGE") {
+      const d = msg.data || {};
+
+      if (d.instructionType === 0) {
+        // Pre-alert (התראה מקדימה)
+        log.info("[WS] PRE-ALERT:", d.bodyHe || d.titleHe || "(no text)");
+        const preAlertCityIds = Array.isArray(d.citiesIds) ? d.citiesIds : [];
+        wsPreAlert = {
+          bodyHe: d.bodyHe || "",
+          bodyEn: d.bodyEn || "",
+          titleHe: d.titleHe || "",
+          citiesIds: preAlertCityIds,
+          zoneIds: resolveZonesFromCityIds(preAlertCityIds),
+          receivedAt: now,
+          expiresAt: now + WS_PRE_ALERT_TTL_MS,
+        };
+        log.info(`[WS] PRE-ALERT resolved ${preAlertCityIds.length} cityIds → ${wsPreAlert.zoneIds.length} zones:`, wsPreAlert.zoneIds.join(", ") || "(none)");
+        // Bust cache so the pre-alert appears on next poll
+        lastFetchedAt = 0;
+
+      } else if (d.instructionType === 1) {
+        // All-clear / end of stay (ניתן לצאת מהמרחב המוגן)
+        log.info("[WS] ALL-CLEAR:", d.bodyHe || "(no text)");
+        wsAllClear = {
+          bodyHe: d.bodyHe || "",
+          receivedAt: now,
+          expiresAt: now + WS_ALL_CLEAR_TTL_MS,
+        };
+        // Clear WS-injected alerts — stay in shelter is over
+        wsAlertsFromWs = [];
+        lastFetchedAt = 0;
+      }
+    }
+  });
+
+  ws.on("close", (code) => {
+    wsConnected = false;
+    wsReconnectAttempt++;
+    const delay = Math.min(1000 * Math.pow(2, wsReconnectAttempt), 30000);
+    log.warn(`[WS] Disconnected (code=${code}), reconnecting in ${delay}ms (attempt ${wsReconnectAttempt})`);
+    setTimeout(startTzevaAdomWebSocket, delay);
+  });
+
+  ws.on("error", (err) => {
+    // close event will handle reconnect; just log here
+    log.error("[WS] Error:", err.message);
+  });
+}
+
+// -------------------------------------------------------------
 // ===================== Public API helpers =====================
 // -------------------------------------------------------------
 function healthPayload() {
+  const now = Date.now();
   return {
     status: "ok",
     env: NODE_ENV,
@@ -1053,13 +1222,36 @@ function healthPayload() {
       oref: { ok: lastOrefOk, status: lastOrefStatus, error: lastOrefError, failCount: orefFailCount, lastSuccessAt: orefLastSuccessAt },
       tzofar: { ok: lastTzofarOk, status: lastTzofarStatus, error: lastTzofarError, failCount: tzofarFailCount, lastSuccessAt: tzofarLastSuccessAt, enabled: TZOFAR_ENABLED },
       tzevaadom: { ok: lastTzevaOk, status: lastTzevaStatus, error: lastTzevaError, failCount: tzevaFailCount, lastSuccessAt: tzevaLastSuccessAt, enabled: TZEVAADOM_FALLBACK_ENABLED },
+      tzevaadomWs: {
+        enabled: TZEVAADOM_WS_ENABLED,
+        connected: wsConnected,
+        lastConnectedAt: wsLastConnectedAt,
+        reconnectAttempt: wsReconnectAttempt,
+        activeWsAlerts: wsAlertsFromWs.filter((a) => a.expiresAt > now).length,
+        preAlert: wsPreAlert && wsPreAlert.expiresAt > now ? true : false,
+        allClear: wsAllClear && wsAllClear.expiresAt > now ? true : false,
+      },
     },
   };
 }
 
 function buildAlertsEnvelope(result, enrichedParsed) {
-  const alertsArr = Array.isArray(enrichedParsed?.alerts) ? enrichedParsed.alerts : [];
-  const contentHash = hashAlerts(alertsArr);
+  const now = Date.now();
+
+  // Clean up expired WS alerts
+  wsAlertsFromWs = wsAlertsFromWs.filter((a) => a.expiresAt > now);
+
+  // Merge WS-pushed alerts with polling alerts (dedup by city+category)
+  const pollingAlerts = Array.isArray(enrichedParsed?.alerts) ? enrichedParsed.alerts : [];
+  const allAlerts = wsAlertsFromWs.length > 0
+    ? deduplicateAlerts([...wsAlertsFromWs, ...pollingAlerts])
+    : pollingAlerts;
+
+  const contentHash = hashAlerts(allAlerts);
+
+  // WS events: pre-alert and all-clear (expire automatically)
+  const activePreAlert = wsPreAlert && wsPreAlert.expiresAt > now ? wsPreAlert : null;
+  const activeAllClear = wsAllClear && wsAllClear.expiresAt > now ? wsAllClear : null;
 
   return {
     ts: lastFetchedAt || null,
@@ -1069,7 +1261,15 @@ function buildAlertsEnvelope(result, enrichedParsed) {
     ok: result?.ok !== false,
     httpStatus: result?.status ?? null,
     contentHash,
-    alerts: alertsArr,
+    alerts: allAlerts,
+    wsEvents: {
+      preAlert: activePreAlert
+        ? { bodyHe: activePreAlert.bodyHe, titleHe: activePreAlert.titleHe, citiesIds: activePreAlert.citiesIds, zoneIds: activePreAlert.zoneIds || [], receivedAt: activePreAlert.receivedAt }
+        : null,
+      allClear: activeAllClear
+        ? { bodyHe: activeAllClear.bodyHe, receivedAt: activeAllClear.receivedAt }
+        : null,
+    },
   };
 }
 
@@ -1474,7 +1674,11 @@ app.listen(PORT, () => {
   console.log("[LocalProxy] TZOFAR_TIMEOUT_MS:", TZOFAR_TIMEOUT_MS);
   console.log("[LocalProxy] TZEVAADOM_FALLBACK_ENABLED:", TZEVAADOM_FALLBACK_ENABLED);
   console.log("[LocalProxy] TZEVAADOM_HISTORY_URL:", TZEVAADOM_HISTORY_URL);
+  console.log("[LocalProxy] TZEVAADOM_WS_ENABLED:", TZEVAADOM_WS_ENABLED);
   console.log("[LocalProxy] DEDUP_WINDOW_MS:", DEDUP_WINDOW_MS);
-  console.log("[LocalProxy] Sources: OREF + " + (TZOFAR_ENABLED ? "Tzofar" : "Tzofar[OFF]") + " + " + (TZEVAADOM_FALLBACK_ENABLED ? "TzevaAdom" : "TzevaAdom[OFF]") + " (parallel)");
+  console.log("[LocalProxy] Sources: OREF + " + (TZOFAR_ENABLED ? "Tzofar" : "Tzofar[OFF]") + " + " + (TZEVAADOM_FALLBACK_ENABLED ? "TzevaAdom-HTTP" : "TzevaAdom-HTTP[OFF]") + " + " + (TZEVAADOM_WS_ENABLED ? "TzevaAdom-WS" : "TzevaAdom-WS[OFF]") + " (parallel)");
+
+  // Start WebSocket push channel (non-blocking)
+  startTzevaAdomWebSocket();
 });
 
