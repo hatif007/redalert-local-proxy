@@ -146,9 +146,9 @@ const DEDUP_WINDOW_MS = Number(process.env.DEDUP_WINDOW_MS || 90000);
 // -------------------------------------------------------------
 // Cache / history / timeouts
 // -------------------------------------------------------------
-const CACHE_TTL_MS = Number(process.env.CACHE_TTL_MS || 1000);
+const CACHE_TTL_MS = Number(process.env.CACHE_TTL_MS || 200);
 const HISTORY_LIMIT = Number(process.env.HISTORY_LIMIT || 200);
-const OREF_TIMEOUT_MS = Number(process.env.OREF_TIMEOUT_MS || 3000);
+const OREF_TIMEOUT_MS = Number(process.env.OREF_TIMEOUT_MS || 2000);
 
 // -------------------------------------------------------------
 // Backoff / cooldown tuning (prevents spamming failing sources)
@@ -460,21 +460,49 @@ function enrichParsedWithZoneInfo(parsed) {
 // Output schema (always):
 // { alerts: [ { id, title, category, cities:[], source, eventTs, raw, ... } ] }
 
+/**
+ * ממיר category מספרי של פיקוד העורף ל-string סמנטי:
+ *  cat 1        → "rocket"
+ *  cat 2        → "uav"          (חדירת כלי טיס)
+ *  cat 10       → "pre_alert" אם title מכיל "בדקות", אחרת "end_of_shelter"
+ *  cat 13       → "end_of_shelter"
+ *  cat 14       → "pre_alert"
+ *  drill (15+)  → category_drill
+ *  אחר         → "alert"
+ */
+function resolveOrefCategory(rawCat, title) {
+  const n = Number(rawCat);
+  const t = String(title || "");
+
+  if (n === 1)  return "rocket";
+  if (n === 2)  return "uav";
+  if (n === 10) return t.includes("בדקות") ? "pre_alert" : "end_of_shelter";
+  if (n === 13) return "end_of_shelter";
+  if (n === 14) return "pre_alert";
+  if (n >= 15)  return "drill";
+  if (rawCat === "rocket" || rawCat === "missiles") return "rocket";
+  return "alert";
+}
+
 function normalizeOrefJson(parsed, eventTsMs) {
   if (!parsed) return { alerts: [] };
 
   // Some OREF variants
   if (Array.isArray(parsed.alerts)) {
     return {
-      alerts: parsed.alerts.map((a, idx) => ({
-        ...a,
-        id: a.id ?? idx,
-        title: normalizeString(a.title ?? ""),
-        category: normalizeString(a.category ?? a.cat ?? ""),
-        cities: Array.isArray(a.cities) ? a.cities.map((c) => normalizeString(c)).filter(Boolean) : [],
-        source: "oref",
-        eventTs: eventTsMs,
-      })),
+      alerts: parsed.alerts.map((a, idx) => {
+        const title = normalizeString(a.title ?? "");
+        const rawCat = a.category ?? a.cat ?? "";
+        return {
+          ...a,
+          id: a.id ?? idx,
+          title,
+          category: resolveOrefCategory(rawCat, title),
+          cities: Array.isArray(a.cities) ? a.cities.map((c) => normalizeString(c)).filter(Boolean) : [],
+          source: "oref",
+          eventTs: eventTsMs,
+        };
+      }),
     };
   }
 
@@ -495,10 +523,13 @@ function normalizeOrefJson(parsed, eventTsMs) {
         .filter(Boolean);
     }
 
+    const title = normalizeString(item.title ?? "");
+    const rawCat = item.category ?? item.cat ?? "";
+
     return {
       id: item.id ?? idx,
-      title: normalizeString(item.title ?? ""),
-      category: normalizeString(item.category ?? item.cat ?? ""),
+      title,
+      category: resolveOrefCategory(rawCat, title),
       cities,
       raw: item,
       source: "oref",
@@ -919,6 +950,54 @@ async function fetchAlertsSmart(force = false) {
           lastTzofarError && `Tzofar: ${lastTzofarError}`,
           lastTzevaError && `TzevaAdom: ${lastTzevaError}`,
         ].filter(Boolean).join(" | ");
+        log.error("[LocalProxy]", errMsg || "All alert sources failed");
+
+        // Emergency: if OREF was skipped only because of backoff (not a real network failure),
+        // bypass the backoff immediately and retry OREF. This prevents missing real alarms
+        // when Tzofar/TzevaAdom are unavailable and OREF is only blocked by our own backoff timer.
+        const orefWasInBackoff = orefResult.reason?.message?.includes("backoff");
+        if (orefWasInBackoff) {
+          log.warn("[LocalProxy] All sources failed + OREF was in backoff — forcing emergency OREF retry");
+          orefBackoffUntil = 0;
+          orefRetryAfterFallbackUntil = 0;
+          try {
+            const emRes = await fetchFromOrefNetwork();
+            const emNorm = normalizeOrefJson(emRes.parsed, Date.now());
+            const emAlerts = (emNorm.alerts || []).map(a => ({ ...a, source: "oref" }));
+            orefFailCount = 0;
+            orefBackoffUntil = 0;
+            orefLastSuccessAt = Date.now();
+            stats.orefSuccess += 1;
+            const emParsed = { alerts: emAlerts };
+            const emRaw = JSON.stringify(emParsed);
+            lastRaw = emRaw;
+            lastParsed = emParsed;
+            lastFetchedAt = Date.now();
+            lastSource = "oref";
+            log.info("[LocalProxy] Emergency OREF retry succeeded, alerts:", emAlerts.length);
+            return { raw: emRaw, parsed: emParsed, fromCache: false, status: 200, ok: true, source: "oref" };
+          } catch (emErr) {
+            log.error("[LocalProxy] Emergency OREF retry also failed:", emErr.message);
+            orefFailCount += 1;
+            orefBackoffUntil = Date.now() + computeBackoffMs(orefFailCount, OREF_BACKOFF_BASE_MS, OREF_BACKOFF_MAX_MS);
+          }
+        }
+
+        // Return stale cached data if available — do NOT throw.
+        // This ensures the Alerts Service still gets a response and can
+        // detect new alerts from the cache instead of getting a 500 error.
+        if (lastRaw && lastParsed) {
+          return {
+            raw: lastRaw,
+            parsed: lastParsed,
+            fromCache: true,
+            stale: true,
+            status: 200,
+            ok: true,
+            source: `stale(${lastSource || "unknown"})`,
+          };
+        }
+        // No cache at all — now we throw (first boot with no data)
         throw new Error(errMsg || "All alert sources failed");
       }
 
