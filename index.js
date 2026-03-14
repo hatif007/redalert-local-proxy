@@ -240,7 +240,7 @@ let wsReconnectAttempt = 0;
 let wsLastConnectedAt = null;
 let wsAlertsFromWs = [];   // [{ id, title, category, cities, source, eventTs, threat, expiresAt }]
 let wsPreAlert = null;     // { bodyHe, bodyEn, titleHe, citiesIds, zoneIds, receivedAt, expiresAt }
-let wsAllClear = null;     // { bodyHe, receivedAt, expiresAt }
+let wsAllClear = null;     // { bodyHe, citiesIds, zoneIds, receivedAt, expiresAt }
 
 // threat ID (Pushy/WS) → category string
 const WS_THREAT_CATEGORY = {
@@ -1180,11 +1180,15 @@ function startTzevaAdomWebSocket() {
       } else if (d.instructionType === 1) {
         // All-clear / end of stay (ניתן לצאת מהמרחב המוגן)
         log.info("[WS] ALL-CLEAR:", d.bodyHe || "(no text)");
+        const allClearCityIds = Array.isArray(d.citiesIds) ? d.citiesIds : [];
         wsAllClear = {
           bodyHe: d.bodyHe || "",
+          citiesIds: allClearCityIds,
+          zoneIds: resolveZonesFromCityIds(allClearCityIds),
           receivedAt: now,
           expiresAt: now + WS_ALL_CLEAR_TTL_MS,
         };
+        log.info(`[WS] ALL-CLEAR resolved ${allClearCityIds.length} cityIds → ${wsAllClear.zoneIds.length} zones:`, wsAllClear.zoneIds.join(", ") || "(none — broadcast)");
         // Clear WS-injected alerts — stay in shelter is over
         wsAlertsFromWs = [];
         lastFetchedAt = 0;
@@ -1267,7 +1271,7 @@ function buildAlertsEnvelope(result, enrichedParsed) {
         ? { bodyHe: activePreAlert.bodyHe, titleHe: activePreAlert.titleHe, citiesIds: activePreAlert.citiesIds, zoneIds: activePreAlert.zoneIds || [], receivedAt: activePreAlert.receivedAt }
         : null,
       allClear: activeAllClear
-        ? { bodyHe: activeAllClear.bodyHe, receivedAt: activeAllClear.receivedAt }
+        ? { bodyHe: activeAllClear.bodyHe, citiesIds: activeAllClear.citiesIds || [], zoneIds: activeAllClear.zoneIds || [], receivedAt: activeAllClear.receivedAt }
         : null,
     },
   };
