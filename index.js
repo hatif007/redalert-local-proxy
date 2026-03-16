@@ -165,6 +165,13 @@ const TZEVA_BACKOFF_BASE_MS = Number(process.env.TZEVA_BACKOFF_BASE_MS || 400);
 const TZEVA_BACKOFF_MAX_MS = Number(process.env.TZEVA_BACKOFF_MAX_MS || 15000);
 
 // -------------------------------------------------------------
+// ⚡ Webhook push to alerts service (zero-latency path)
+// -------------------------------------------------------------
+const WEBHOOK_URL = (process.env.WEBHOOK_URL || "").trim();
+const WEBHOOK_KEY = (process.env.WEBHOOK_KEY || INTERNAL_KEY).trim();
+const WEBHOOK_INTERVAL_MS = Number(process.env.WEBHOOK_INTERVAL_MS || 150);
+
+// -------------------------------------------------------------
 // ✅ Tzeva Adom WebSocket (push channel: pre-alert + all-clear + active alerts)
 // -------------------------------------------------------------
 const TZEVAADOM_WS_ENABLED = String(process.env.TZEVAADOM_WS_ENABLED || "true").toLowerCase() === "true";
@@ -1650,6 +1657,66 @@ app.use((err, req, res, next) => {
   if (NODE_ENV === "development" && err.stack) payload.stack = err.stack;
   res.status(status).json(payload);
 });
+
+// -------------------------------------------------------------
+// ⚡ Webhook self-poll loop – detects hash change, pushes to alerts service
+// -------------------------------------------------------------
+let _webhookLastHash = "";
+let _webhookFailCount = 0;
+
+async function webhookTick() {
+  try {
+    const result = await fetchAlertsSmart(false);
+    const enrichedParsed = enrichParsedWithZoneInfo(result.parsed);
+    const envelope = buildAlertsEnvelope(result, enrichedParsed);
+
+    // ✅ FIX: כלול wsEvents ב-hash כדי לזהות שינויי preAlert / allClear
+    // גם כשאין שינוי ברשימת האזעקות עצמה.
+    const wsEventsKey = JSON.stringify({
+      preAlert: envelope.wsEvents?.preAlert?.receivedAt ?? null,
+      allClear: envelope.wsEvents?.allClear?.receivedAt ?? null,
+    });
+    const fullHash = envelope.contentHash + "|" + wsEventsKey;
+
+    if (fullHash === _webhookLastHash) return;
+    _webhookLastHash = fullHash;
+
+    if (!WEBHOOK_URL) return;
+
+    fetchFn(WEBHOOK_URL, {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+        "x-internal-key": WEBHOOK_KEY,
+      },
+      body: JSON.stringify(envelope),
+      signal: AbortSignal.timeout(2000),
+    })
+      .then((r) => {
+        if (r.ok) {
+          _webhookFailCount = 0;
+        } else {
+          _webhookFailCount++;
+          if (_webhookFailCount % 10 === 1)
+            log.warn(`[webhook] HTTP ${r.status} (fail #${_webhookFailCount})`);
+        }
+      })
+      .catch((e) => {
+        _webhookFailCount++;
+        if (_webhookFailCount % 10 === 1)
+          log.warn(`[webhook] error (fail #${_webhookFailCount}):`, e.message);
+      });
+  } catch (_) {
+    // fetchAlertsSmart errors are logged internally
+  }
+}
+
+if (WEBHOOK_URL) {
+  setInterval(webhookTick, WEBHOOK_INTERVAL_MS).unref();
+  log.info(`[webhook] enabled → ${WEBHOOK_URL} every ${WEBHOOK_INTERVAL_MS}ms`);
+} else {
+  log.info("[webhook] disabled (WEBHOOK_URL not set)");
+}
 
 // -------------------------------------------------------------
 // ===================== Process hardening =====================
