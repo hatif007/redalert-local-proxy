@@ -29,7 +29,14 @@ const CHECKS = [
     url: "https://tunnel.shelter-alert.com/health",
     validate: (j) => {
       if (j.status !== "ok") return "status != ok";
-      if (!j.sources?.oref?.ok) return `OREF down: ${j.sources?.oref?.error || "unknown"}`;
+      // OREF can be briefly in backoff (normal) — only alert if no success in last 10 minutes
+      const orefLastSuccess = j.sources?.oref?.lastSuccessAt;
+      if (orefLastSuccess && orefLastSuccess > 0) {
+        const orefStaleMs = Date.now() - orefLastSuccess;
+        if (orefStaleMs > 10 * 60 * 1000) {
+          return `OREF לא הצליח כבר ${Math.round(orefStaleMs / 60000)} דקות`;
+        }
+      }
       return null;
     },
     // Auto-heal: restart cloudflared when tunnel is unreachable
@@ -61,8 +68,10 @@ const CHECKS = [
     url: "https://api.shelter-alert.com/health",
     validate: (j) => {
       if (!j.ok) return "ok=false";
-      if (j.tunnel?.status !== "up") return `tunnel status: ${j.tunnel?.status}`;
-      if (j.tunnel?.failCount > 3) return `tunnel failCount=${j.tunnel?.failCount}`;
+      // Only alert if tunnel is down AND fallback is also not working
+      if (j.tunnel?.status !== "up" && !j.tunnel?.directFallback?.active) {
+        return `tunnel status: ${j.tunnel?.status} (אין fallback)`;
+      }
       return null;
     },
     // No auto-heal for Railway — it's a cloud service we don't control
