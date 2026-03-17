@@ -1,0 +1,19 @@
+# Logs
+*.log
+logs/
+BACKUP/
+
+# Lock files
+*.lock
+
+# Windows
+Thumbs.db
+
+# Dependencies
+node_modules/
+
+# Environment (contains secrets)
+.env
+
+# PM2
+.pm2/

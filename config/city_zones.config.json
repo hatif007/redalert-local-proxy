@@ -427,6 +427,10 @@
     "cityName": "באר גנים",
     "zoneId": "west lachis"
   },
+   {
+    "cityName": "אשקלון",
+    "zoneId": "west lachis"
+  },
   {
     "cityName": "באר טוביה",
     "zoneId": "lachis"
@@ -2792,6 +2796,10 @@
     "zoneId": "wedi era"
   },
   {
+    "cityName": "אילת",
+    "zoneId": "eilat"
+  },
+  {
     "cityName": "מצפה יריחו",
     "zoneId": "yehuda"
   },
@@ -4482,5 +4490,19 @@
   {
     "cityName": "תפרח",
     "zoneId": "west hanegev"
+  },
+   
+  {
+    "cityName": "שוהם",
+    "zoneId": "yarkon"
+  },
+  {
+    "cityName":"שלומי",
+    "zoneId": "kav haeimut"
+  },
+   {
+    "cityName": "תל אביב",
+    "zoneId": "dan"
   }
+  
 ]
