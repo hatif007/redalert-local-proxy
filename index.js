@@ -159,7 +159,7 @@ const OREF_BACKOFF_BASE_MS = Number(process.env.OREF_BACKOFF_BASE_MS || 400);
 const OREF_BACKOFF_MAX_MS = Number(process.env.OREF_BACKOFF_MAX_MS || 15000);
 
 // After using fallback, wait a bit before retrying OREF aggressively
-const OREF_RETRY_AFTER_FALLBACK_MS = Number(process.env.OREF_RETRY_AFTER_FALLBACK_MS || 3000);
+// OREF_RETRY_AFTER_FALLBACK_MS removed — OREF and TzevaAdom now run in parallel
 
 const TZEVA_BACKOFF_BASE_MS = Number(process.env.TZEVA_BACKOFF_BASE_MS || 400);
 const TZEVA_BACKOFF_MAX_MS = Number(process.env.TZEVA_BACKOFF_MAX_MS || 15000);
@@ -979,7 +979,7 @@ async function fetchAlertsSmart(force = false) {
           tzevaBackoffUntil = 0;
           tzevaLastSuccessAt = fetchedAt;
           stats.tzevaSuccess += 1;
-          orefRetryAfterFallbackUntil = fetchedAt + OREF_RETRY_AFTER_FALLBACK_MS;
+          // ✅ FIX: לא לדחות OREF כשTzevaAdom עובד — שניהם צריכים לרוץ במקביל
         } catch (e) {
           lastTzevaOk = false;
           lastTzevaError = e.message;
