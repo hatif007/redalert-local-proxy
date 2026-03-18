@@ -76,6 +76,14 @@ const CHECKS = [
       if (j.push?.firebaseReady === false) {
         return "FCM לא מאותחל";
       }
+      // WS TzevaAdom check — if disconnected for >5 min, PRE_ALERT/ALL_CLEAR won't reach users
+      const ws = j.wsDirectFallback;
+      if (ws && ws.connected === false && ws.reconnectAttempt > 5) {
+        const downSince = ws.lastConnectedAt
+          ? `(מנותק ${Math.round((Date.now() - ws.lastConnectedAt) / 60000)} דקות)`
+          : "(מעולם לא התחבר)";
+        return `WebSocket TzevaAdom מנותק — ${ws.reconnectAttempt} ניסיונות חיבור ${downSince}`;
+      }
       const ps = j.push?.lastPushStats;
       const lastPushAt = j.push?.lastPushAt;
       const pushIsRecent = lastPushAt && (Date.now() - lastPushAt) < 10 * 60 * 1000;
