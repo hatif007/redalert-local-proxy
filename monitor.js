@@ -31,12 +31,13 @@ const CHECKS = [
     url: "https://tunnel.shelter-alert.com/health",
     validate: (j) => {
       if (j.status !== "ok") return "status != ok";
-      // OREF can be briefly in backoff (normal) — only alert if no success in last 10 minutes
+      // OREF can be briefly in backoff (normal) — only alert if no success in last 10 minutes AND TzevaAdom WS is also down
       const orefLastSuccess = j.sources?.oref?.lastSuccessAt;
-      if (orefLastSuccess && orefLastSuccess > 0) {
+      const wsConnected = j.sources?.tzevaadomWs?.connected;
+      if (orefLastSuccess && orefLastSuccess > 0 && !wsConnected) {
         const orefStaleMs = Date.now() - orefLastSuccess;
         if (orefStaleMs > 10 * 60 * 1000) {
-          return `OREF לא הצליח כבר ${Math.round(orefStaleMs / 60000)} דקות`;
+          return `OREF לא הצליח כבר ${Math.round(orefStaleMs / 60000)} דקות (גם WS מנותק)`;
         }
       }
       return null;
@@ -64,9 +65,9 @@ const CHECKS = [
     url: "https://api.shelter-alert.com/health",
     validate: (j) => {
       if (!j.ok) return "ok=false";
-      // Tunnel check
-      if (j.tunnel?.status !== "up" && !j.tunnel?.directFallback?.active) {
-        return `tunnel status: ${j.tunnel?.status} (אין fallback)`;
+      // Tunnel check — require 3+ consecutive failures to avoid false alarms on transient hiccups
+      if (j.tunnel?.status !== "up" && !j.tunnel?.directFallback?.active && (j.tunnel?.failCount ?? 0) >= 3) {
+        return `tunnel status: ${j.tunnel?.status} (אין fallback, failures=${j.tunnel?.failCount})`;
       }
       // MongoDB check
       if (j.history?.mongoReady === false) {
@@ -75,6 +76,10 @@ const CHECKS = [
       // FCM check
       if (j.push?.firebaseReady === false) {
         return "FCM לא מאותחל";
+      }
+      // Token cache check
+      if (j.push?.tokenCache?.ready === false && j.history?.mongoReady === true) {
+        return "Token cache לא מוכן (MongoDB מחובר אך cache לא נבנה)";
       }
       // WS TzevaAdom check — if disconnected for >5 min, PRE_ALERT/ALL_CLEAR won't reach users
       const ws = j.wsDirectFallback;
@@ -131,7 +136,9 @@ const CHECKS = [
 
 // Track consecutive failures per check
 const failCounts = {};
+const lastAlertAt = {}; // cooldown: don't re-alert for same issue within 15 min
 const ALERT_AFTER_FAILS = 2;
+const ALERT_COOLDOWN_MS = 15 * 60 * 1000; // 15 minutes between repeated alerts
 
 function sleep(ms) {
   return new Promise((r) => setTimeout(r, ms));
@@ -171,14 +178,20 @@ async function checkEndpoint(check) {
       console.log(`[monitor] ⚠️  ${key} — ${error} (fail #${failCounts[key]})`);
 
       if (failCounts[key] >= ALERT_AFTER_FAILS) {
-        let healMsg = "";
-        if (check.heal) {
-          healMsg = await check.heal();
-          healMsg = `\n🔧 תיקון אוטומטי: ${healMsg}`;
+        const now = Date.now();
+        if (!lastAlertAt[key] || now - lastAlertAt[key] > ALERT_COOLDOWN_MS) {
+          lastAlertAt[key] = now;
+          let healMsg = "";
+          if (check.heal) {
+            healMsg = await check.heal();
+            healMsg = `\n🔧 תיקון אוטומטי: ${healMsg}`;
+          }
+          await sendTelegram(
+            `🚨 <b>ShelterAlert — תקלה</b>\n\n${key}\n❌ ${error}${healMsg}\n\n🕐 ${new Date().toLocaleString("he-IL", { timeZone: "Asia/Jerusalem" })}`
+          );
+        } else {
+          console.log(`[monitor] 🔇 ${key} — cooldown (${Math.round((ALERT_COOLDOWN_MS - (Date.now() - lastAlertAt[key])) / 60000)}m נשאר)`);
         }
-        await sendTelegram(
-          `🚨 <b>ShelterAlert — תקלה</b>\n\n${key}\n❌ ${error}${healMsg}\n\n🕐 ${new Date().toLocaleString("he-IL", { timeZone: "Asia/Jerusalem" })}`
-        );
       }
     } else {
       if (failCounts[key] >= ALERT_AFTER_FAILS) {
@@ -186,6 +199,7 @@ async function checkEndpoint(check) {
           `✅ <b>ShelterAlert — שוחזר</b>\n\n${key}\n✔️ חזר לפעולה תקינה\n\n🕐 ${new Date().toLocaleString("he-IL", { timeZone: "Asia/Jerusalem" })}`
         );
       }
+      lastAlertAt[key] = 0;
       failCounts[key] = 0;
       console.log(`[monitor] ✅ ${key} — ok`);
     }
@@ -194,14 +208,20 @@ async function checkEndpoint(check) {
     console.log(`[monitor] ❌ ${key} — ${e.message} (fail #${failCounts[key]})`);
 
     if (failCounts[key] >= ALERT_AFTER_FAILS) {
-      let healMsg = "";
-      if (check.heal) {
-        healMsg = await check.heal();
-        healMsg = `\n🔧 תיקון אוטומטי: ${healMsg}`;
+      const now = Date.now();
+      if (!lastAlertAt[key] || now - lastAlertAt[key] > ALERT_COOLDOWN_MS) {
+        lastAlertAt[key] = now;
+        let healMsg = "";
+        if (check.heal) {
+          healMsg = await check.heal();
+          healMsg = `\n🔧 תיקון אוטומטי: ${healMsg}`;
+        }
+        await sendTelegram(
+          `🚨 <b>ShelterAlert — תקלה</b>\n\n${key}\n❌ ${e.message}${healMsg}\n\n🕐 ${new Date().toLocaleString("he-IL", { timeZone: "Asia/Jerusalem" })}`
+        );
+      } else {
+        console.log(`[monitor] 🔇 ${key} — cooldown (${Math.round((ALERT_COOLDOWN_MS - (Date.now() - lastAlertAt[key])) / 60000)}m נשאר)`);
       }
-      await sendTelegram(
-        `🚨 <b>ShelterAlert — תקלה</b>\n\n${key}\n❌ ${e.message}${healMsg}\n\n🕐 ${new Date().toLocaleString("he-IL", { timeZone: "Asia/Jerusalem" })}`
-      );
     }
   }
 }
