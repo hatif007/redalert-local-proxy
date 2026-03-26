@@ -164,6 +164,11 @@ const OREF_BACKOFF_MAX_MS = Number(process.env.OREF_BACKOFF_MAX_MS || 15000);
 const TZEVA_BACKOFF_BASE_MS = Number(process.env.TZEVA_BACKOFF_BASE_MS || 400);
 const TZEVA_BACKOFF_MAX_MS = Number(process.env.TZEVA_BACKOFF_MAX_MS || 15000);
 
+// Circuit breaker: after this many consecutive failures, extend backoff to CIRCUIT_OPEN_MS
+// and log a warning. Prevents hammering a clearly-down source every 15s indefinitely.
+const CB_OPEN_THRESHOLD = Number(process.env.CB_OPEN_THRESHOLD || 20); // ~5 min at 15s max backoff
+const CB_OPEN_BACKOFF_MS = Number(process.env.CB_OPEN_BACKOFF_MS || 60000); // 60s while open
+
 // -------------------------------------------------------------
 // ⚡ Webhook push to alerts service (zero-latency path)
 // -------------------------------------------------------------
@@ -929,14 +934,18 @@ async function fetchAlertsSmart(force = false) {
           lastOrefOk = false;
           lastOrefError = e.message;
           orefFailCount += 1;
-          orefBackoffUntil = fetchedAt + computeBackoffMs(orefFailCount, OREF_BACKOFF_BASE_MS, OREF_BACKOFF_MAX_MS);
+          const orefBackoff = orefFailCount >= CB_OPEN_THRESHOLD ? CB_OPEN_BACKOFF_MS : computeBackoffMs(orefFailCount, OREF_BACKOFF_BASE_MS, OREF_BACKOFF_MAX_MS);
+          if (orefFailCount === CB_OPEN_THRESHOLD) log.warn(`[CB] OREF circuit open after ${orefFailCount} failures — backing off ${CB_OPEN_BACKOFF_MS / 1000}s`);
+          orefBackoffUntil = fetchedAt + orefBackoff;
         }
       } else {
         lastOrefOk = false;
         lastOrefError = orefResult.reason?.message || String(orefResult.reason);
         if (orefResult.reason?.isNetworkError) {
           orefFailCount += 1;
-          orefBackoffUntil = fetchedAt + computeBackoffMs(orefFailCount, OREF_BACKOFF_BASE_MS, OREF_BACKOFF_MAX_MS);
+          const orefBackoff = orefFailCount >= CB_OPEN_THRESHOLD ? CB_OPEN_BACKOFF_MS : computeBackoffMs(orefFailCount, OREF_BACKOFF_BASE_MS, OREF_BACKOFF_MAX_MS);
+          if (orefFailCount === CB_OPEN_THRESHOLD) log.warn(`[CB] OREF circuit open after ${orefFailCount} failures — backing off ${CB_OPEN_BACKOFF_MS / 1000}s`);
+          orefBackoffUntil = fetchedAt + orefBackoff;
         }
       }
 
@@ -1731,10 +1740,33 @@ process.on("uncaughtException", (err) => {
   process.exit(1);
 });
 
+// Graceful shutdown — allows PM2 / Docker to restart cleanly
+const _server = app.listen; // captured below after listen() call
+let _httpServer;
+
+function gracefulShutdown(signal) {
+  console.log(`[LocalProxy] ${signal} received — shutting down gracefully`);
+  if (_httpServer) {
+    _httpServer.close(() => {
+      console.log("[LocalProxy] HTTP server closed");
+      process.exit(0);
+    });
+  } else {
+    process.exit(0);
+  }
+  setTimeout(() => {
+    console.error("[LocalProxy] Force exit after 10s timeout");
+    process.exit(1);
+  }, 10000).unref();
+}
+
+process.on("SIGTERM", () => gracefulShutdown("SIGTERM"));
+process.on("SIGINT",  () => gracefulShutdown("SIGINT"));
+
 // -------------------------------------------------------------
 // ===================== Start server =====================
 // -------------------------------------------------------------
-app.listen(PORT, () => {
+_httpServer = app.listen(PORT, () => {
   console.log(`[LocalProxy] listening on http://127.0.0.1:${PORT}`);
   console.log("[LocalProxy] ENV:", NODE_ENV);
   console.log("[LocalProxy] INTERNAL_KEY:", INTERNAL_KEY ? "[SET]" : "[MISSING]");
