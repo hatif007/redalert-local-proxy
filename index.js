@@ -666,22 +666,23 @@ function deduplicateAlerts(alertsArr) {
     return pa - pb;
   });
 
-  // seen: "cityKey::category" → timestamp of already-accepted alert
-  const seen = new Map();
+  // seen: "cityKey::category" — tracks cities already covered by a higher-priority source.
+  // No time-window check: OREF eventTs is always Date.now() (changes every poll),
+  // while Tzofar/TzevaAdom use stable timestamps — comparing them causes false
+  // "not duplicate" results after DEDUP_WINDOW_MS seconds, triggering repeated pushes.
+  const seen = new Set();
   const result = [];
 
   for (const alert of sorted) {
     const cities = Array.isArray(alert.cities) ? alert.cities : [];
     const cat = normalizeString(alert.category || "");
-    const ts = Number(alert.eventTs) || 0;
 
     // An alert is a duplicate if ANY of its cities was already seen
-    // from a higher-priority source within DEDUP_WINDOW_MS
+    // from a higher-priority source (priority already enforced by sort above)
     let isDuplicate = false;
     for (const city of cities) {
       const key = `${normalizeCityKey(city)}::${cat}`;
-      const existing = seen.get(key);
-      if (existing !== undefined && Math.abs(existing - ts) <= DEDUP_WINDOW_MS) {
+      if (seen.has(key)) {
         isDuplicate = true;
         break;
       }
@@ -692,7 +693,7 @@ function deduplicateAlerts(alertsArr) {
     // Register all cities of this alert as seen
     for (const city of cities) {
       const key = `${normalizeCityKey(city)}::${cat}`;
-      if (!seen.has(key)) seen.set(key, ts);
+      seen.add(key);
     }
 
     result.push(alert);
