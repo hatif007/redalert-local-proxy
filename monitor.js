@@ -49,11 +49,11 @@ const CHECKS = [
         return "heal skipped (יותר מדי restarts בשעה האחרונה)";
       }
       try {
-        console.log("[monitor] 🔧 Restarting cloudflared via PM2...");
-        execSync("npx pm2 restart cloudflared-tunnel", { timeout: 15000 });
+        console.log("[monitor] 🔧 Restarting cloudflared via systemctl...");
+        execSync("systemctl restart cloudflared", { timeout: 15000 });
         healLog.push(Date.now());
-        console.log("[monitor] 🔧 cloudflared restarted via PM2");
-        return "cloudflared הופעל מחדש (PM2)";
+        console.log("[monitor] 🔧 cloudflared restarted via systemctl");
+        return "cloudflared הופעל מחדש (systemctl)";
       } catch (e) {
         console.error("[monitor] heal failed:", e.message);
         return `heal נכשל: ${e.message}`;
