@@ -499,6 +499,11 @@ function enrichAlertWithZoneInfo(alert) {
   const zoneIdNorm = resolveZone(primaryCity);
 
   if (!zoneIdNorm) {
+    console.error(
+      `[ZoneMap] ❌ ZONE_RESOLUTION_FAILED — city="${primaryCity || "(none)"}" ` +
+      `title="${alert.title || ""}" cities=[${cities.join(", ")}] — ` +
+      `alert will have zoneId=null, push targeting may fail`
+    );
     return { ...alert, cities, zoneId: null, zoneName: null, protectionTimeSeconds: null };
   }
 
