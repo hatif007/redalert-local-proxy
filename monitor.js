@@ -256,7 +256,11 @@ console.log(`[monitor] Started — turbo mode (1 min) for ${turboMinsLeft} more 
 const CANARY_DEVICE_ID = process.env.CANARY_DEVICE_ID || "0ce6de38-061a-4c3f-b82a-4e51733deff8";
 const CANARY_INTERVAL_MS = 60 * 60 * 1000; // 1 hour
 const RAILWAY_API = "https://api.shelter-alert.com";
-const INTERNAL_KEY = process.env.INTERNAL_KEY || "testkey123";
+const INTERNAL_KEY = process.env.INTERNAL_KEY;
+if (!INTERNAL_KEY) {
+  console.error("[monitor] INTERNAL_KEY missing — refusing to start");
+  process.exit(1);
+}
 
 async function runFcmCanary() {
   try {

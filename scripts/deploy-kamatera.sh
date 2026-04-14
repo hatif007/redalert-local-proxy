@@ -41,9 +41,13 @@ echo "📦 Installing npm packages..."
 npm install --production
 
 # ── 6. .env file ─────────────────────────────────────────────
+if [ -z "${INTERNAL_KEY:-}" ] || [ -z "${WEBHOOK_KEY:-}" ]; then
+  echo "❌ INTERNAL_KEY and WEBHOOK_KEY must be exported before running this script" >&2
+  exit 1
+fi
 echo "⚙️  Creating .env..."
-cat > .env << 'ENVEOF'
-INTERNAL_KEY=testkey123
+cat > .env << ENVEOF
+INTERNAL_KEY=${INTERNAL_KEY}
 NODE_ENV=production
 PORT=3000
 ALLOWED_ORIGINS=http://localhost:8080,http://localhost:3000,https://tunnel.shelter-alert.com
@@ -70,7 +74,7 @@ BASE_TUNNEL_URL=https://tunnel.shelter-alert.com
 
 # Webhook push to alerts service
 WEBHOOK_URL=https://api.shelter-alert.com/internal/alert-webhook
-WEBHOOK_KEY=testkey123
+WEBHOOK_KEY=${WEBHOOK_KEY}
 WEBHOOK_INTERVAL_MS=150
 ENVEOF
 
