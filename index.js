@@ -562,19 +562,26 @@ function normalizeOrefJson(parsed, eventTsMs) {
   // Some OREF variants
   if (Array.isArray(parsed.alerts)) {
     return {
-      alerts: parsed.alerts.map((a, idx) => {
-        const title = normalizeString(a.title ?? "");
-        const rawCat = a.category ?? a.cat ?? "";
-        return {
-          ...a,
-          id: a.id ?? idx,
-          title,
-          category: resolveOrefCategory(rawCat, title),
-          cities: Array.isArray(a.cities) ? a.cities.map((c) => normalizeString(c)).filter(Boolean) : [],
-          source: "oref",
-          eventTs: eventTsMs,
-        };
-      }),
+      // Drop malformed OREF rows with no cities so they don't reach zone
+      // enrichment and produce zoneId=null spam / untargetable pushes.
+      alerts: parsed.alerts
+        .map((a, idx) => {
+          const title = normalizeString(a.title ?? "");
+          const rawCat = a.category ?? a.cat ?? "";
+          const cities = Array.isArray(a.cities)
+            ? a.cities.map((c) => normalizeString(c)).filter(Boolean)
+            : [];
+          return {
+            ...a,
+            id: a.id ?? idx,
+            title,
+            category: resolveOrefCategory(rawCat, title),
+            cities,
+            source: "oref",
+            eventTs: eventTsMs,
+          };
+        })
+        .filter((a) => Array.isArray(a.cities) && a.cities.length > 0),
     };
   }
 
@@ -583,31 +590,33 @@ function normalizeOrefJson(parsed, eventTsMs) {
   else if (Array.isArray(parsed.data)) rawAlerts = parsed.data;
   else return { alerts: [] };
 
-  const alerts = rawAlerts.map((item, idx) => {
-    let cities = [];
+  const alerts = rawAlerts
+    .map((item, idx) => {
+      let cities = [];
 
-    if (Array.isArray(item.cities)) {
-      cities = item.cities.map((c) => normalizeString(c)).filter(Boolean);
-    } else if (typeof item.data === "string") {
-      cities = item.data
-        .split(/[,\n;]/)
-        .map((s) => normalizeString(s))
-        .filter(Boolean);
-    }
+      if (Array.isArray(item.cities)) {
+        cities = item.cities.map((c) => normalizeString(c)).filter(Boolean);
+      } else if (typeof item.data === "string") {
+        cities = item.data
+          .split(/[,\n;]/)
+          .map((s) => normalizeString(s))
+          .filter(Boolean);
+      }
 
-    const title = normalizeString(item.title ?? "");
-    const rawCat = item.category ?? item.cat ?? "";
+      const title = normalizeString(item.title ?? "");
+      const rawCat = item.category ?? item.cat ?? "";
 
-    return {
-      id: item.id ?? idx,
-      title,
-      category: resolveOrefCategory(rawCat, title),
-      cities,
-      raw: item,
-      source: "oref",
-      eventTs: eventTsMs,
-    };
-  });
+      return {
+        id: item.id ?? idx,
+        title,
+        category: resolveOrefCategory(rawCat, title),
+        cities,
+        raw: item,
+        source: "oref",
+        eventTs: eventTsMs,
+      };
+    })
+    .filter((a) => Array.isArray(a.cities) && a.cities.length > 0);
 
   return { alerts };
 }
@@ -681,6 +690,8 @@ function deduplicateAlerts(alertsArr) {
   for (const alert of sorted) {
     const cities = Array.isArray(alert.cities) ? alert.cities : [];
     const cat = normalizeString(alert.category || "");
+
+    if (!cities.length) continue;
 
     // An alert is a duplicate if ANY of its cities was already seen
     // from a higher-priority source (priority already enforced by sort above)
