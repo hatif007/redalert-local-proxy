@@ -13,7 +13,6 @@ module.exports = {
       env: {
         NODE_ENV: "production",
       },
-      // Log to files (pm2 managed)
       out_file: "./logs/pm2-out.log",
       error_file: "./logs/pm2-err.log",
       merge_logs: true,
